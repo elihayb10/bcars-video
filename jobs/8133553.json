@@ -1,0 +1,60 @@
+{
+ "plate": "8133553",
+ "images": [
+  "https://cm.auto360.co.il/uploads/09-26/lNXJP97n97.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/26xbFLxlcX.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/ElRxie5Xef.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/FF1lEXaD6x.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/khEnEqFYrn.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/yTM5Aouik6.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/UZiZOF9FgZ.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/3EK89XilIQ.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/C5KqBxhO3A.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/GxoG71iBfu.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/130/130.mp3",
+  "start": 14.1
+ },
+ "data": {
+  "plate": "8133553",
+  "name": "אופל אסטרה ST 2014"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים סטיישן לתקציב מצומצם?",
+   "show": "מחפשים סטיישן לתקציב מצומצם?"
+  },
+  {
+   "beat": 1,
+   "say": "אופל אסטרה אס טי, אלפיים וארבע עשרה.",
+   "show": "גימור <b><span class=\"ltr\">ENJOY</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים חמישים ושתיים אלף קילומטר.",
+   "show": "<span class=\"ltr\">252,000</span> ק״מ"
+  },
+  {
+   "beat": 2,
+   "say": "מאה וארבעים כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">140</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שש עשרה אלף שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">16,000 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

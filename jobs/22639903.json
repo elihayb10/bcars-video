@@ -1,0 +1,60 @@
+{
+ "plate": "22639903",
+ "images": [
+  "https://cm.auto360.co.il/uploads/09-26/5U189f38z2.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/9yfKZdIU1h.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/0WtZW1s7lI.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/QoMykHRtWB.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/SdqD7k3ces.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/DuJwVupbja.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/JXSbPaESQv.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/O8roCT5Cwm.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/gSGNMPXWs6.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/PbaVungTZZ.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/33/33.mp3",
+  "start": 10.4
+ },
+ "data": {
+  "plate": "22639903",
+  "name": "פיג'ו 2008 2023"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים קרוסאובר קומפקטי דיזל?",
+   "show": "מחפשים קרוסאובר קומפקטי דיזל?"
+  },
+  {
+   "beat": 1,
+   "say": "פז'ו אלפיים ושמונה, אלפיים עשרים ושלוש.",
+   "show": "גימור <b><span class=\"ltr\">Active</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "תשעים ושתיים אלף קילומטר, יד ראשונה.",
+   "show": "<span class=\"ltr\">92,000</span> ק״מ | יד 1"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ושלושים כוח סוס, דיזל, אוטומטית.",
+   "show": "דיזל · אוטומטי · <span class=\"ltr\">130</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שמונים ואחת אלף, מאתיים וחמישים שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">81,250 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

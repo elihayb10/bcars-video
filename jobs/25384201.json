@@ -1,0 +1,60 @@
+{
+ "plate": "25384201",
+ "images": [
+  "https://cm.auto360.co.il/uploads/07-26/JLY7YbmaBE.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/8qyywNubE5.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/ReAMzPGlY7.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/IVkxneg5Mu.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/AAEtY1dqQJ.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/cyaE86amQz.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/7ZLkdTXbet.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/wuLj7O3Kwv.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/bgUSRcOJw4.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/p1oX51c4zK.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/130/130.mp3",
+  "start": 14.1
+ },
+ "data": {
+  "plate": "25384201",
+  "name": "שברולט מאליבו 2018"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים סדאן משפחתי?",
+   "show": "מחפשים סדאן משפחתי?"
+  },
+  {
+   "beat": 1,
+   "say": "שברולט מאליבו, אלפיים ושמונה עשרה.",
+   "show": "גימור <b><span class=\"ltr\">LT-LUX</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה שישים וחמש אלף ומאתיים קילומטר.",
+   "show": "<span class=\"ltr\">165,200</span> ק״מ | יד 01 פרטי"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ושישים כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">160</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: ארבעים ושבע אלף שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">47,000 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

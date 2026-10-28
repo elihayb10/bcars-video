@@ -1,0 +1,60 @@
+{
+ "plate": "22694403",
+ "images": [
+  "https://cm.auto360.co.il/uploads/08-26/5w4kz3iyGT.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/PJAvF2HD1W.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/TANnhEjpZs.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/NJH25wDRay.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/bGLvk5JLCz.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/Re9k8xt2KG.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/34KBMymGC1.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/OY7VCtjtwz.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/GcsiXdxavx.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/BiFpgUVT5b.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/258/258.mp3",
+  "start": 10.4
+ },
+ "data": {
+  "plate": "22694403",
+  "name": "פיג'ו 3008 2023"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים קרוסאובר משפחתי?",
+   "show": "מחפשים קרוסאובר משפחתי?"
+  },
+  {
+   "beat": 1,
+   "say": "פז'ו שלושת אלפים ושמונה, אלפיים עשרים ושלוש.",
+   "show": "גימור <b><span class=\"ltr\">ACTIVE PACK</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "שלושים ושמונה אלף קילומטר.",
+   "show": "<span class=\"ltr\">38,000</span> ק״מ | יד 01"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ושלושים כוח סוס, דיזל, אוטומטית.",
+   "show": "דיזל · אוטומטי · <span class=\"ltr\">130</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: מאה ושלוש עשרה אלף שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">113,000 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

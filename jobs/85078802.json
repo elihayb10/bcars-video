@@ -1,0 +1,60 @@
+{
+ "plate": "85078802",
+ "images": [
+  "https://cm.auto360.co.il/uploads/08-26/5zkJv8yXAt.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/eLbvN7Jtwu.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/rIGDL2lnAs.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/YUpMkgpFUt.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/I56VgYrB5V.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/zGir1aQ4RM.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/02BP0BXef3.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/2iNFIe62BZ.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/QlRhiHC3vt.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/6E4ye790eF.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/371/371.mp3",
+  "start": 12.3
+ },
+ "data": {
+  "plate": "85078802",
+  "name": "מזדה 2 2022"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים רכב קטן לעיר?",
+   "show": "מחפשים רכב קטן לעיר?"
+  },
+  {
+   "beat": 1,
+   "say": "מאזדה שתיים, אלפיים עשרים ושתיים.",
+   "show": "גימור <b><span class=\"ltr\">Dynamic</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ארבעים וארבע אלף חמש מאות חמישים וחמש קילומטר.",
+   "show": "<span class=\"ltr\">144,555</span> ק״מ | יד 01"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ושש עשרה כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">116</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שמונים אלף, שש מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">80,600 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

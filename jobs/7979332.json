@@ -1,0 +1,66 @@
+{
+ "plate": "7979332",
+ "images": [
+  "https://cm.auto360.co.il/uploads/06-26/krs4eRg3Pz.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/Ha4EEqSmHO.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/DiZ2axVck1.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/WIgzLeNlqy.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/FnHu2te0Wm.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/lR0zvws8ut.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/jPqymf4AIW.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/PsoqyAHxer.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/urx9xOk93j.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/THv1PRipTi.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/471/471.mp3",
+  "start": 14.9
+ },
+ "data": {
+  "plate": "7979332",
+  "name": "רובר דיסקברי ספורט 2015"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים אֶס-יוּ-וִי לשבעה נוסעים?",
+   "show": "מחפשים <b>SUV</b> ל-7 נוסעים?"
+  },
+  {
+   "beat": 1,
+   "say": "רובר דיסקברי ספורט, אלפיים וחמש עשרה.",
+   "show": "גימור <b><span class=\"ltr\">SE</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ושלוש אלף קילומטר, יד ראשונה.",
+   "show": "<span class=\"ltr\">103,000</span> ק״מ | יד 1 פרטי"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים וארבעים כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">240</span> כ״ס"
+  },
+  {
+   "beat": 2,
+   "say": "",
+   "show": "טסט עד <span class=\"ltr\">10/05/2027</span>",
+   "hold": 1.6
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שבעים וארבע אלף שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">74,000 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

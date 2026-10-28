@@ -1,0 +1,55 @@
+{
+ "plate": "1857312",
+ "images": [
+  "https://cm.auto360.co.il/uploads/10-26/IVJQMJEw2g.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/G7S6klt1lk.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/P9uKPTTrZJ.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/9teDjWh6Xz.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/WjLHncb1lT.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/d2WhNglj2q.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/hCCq4PMgS0.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/5Hd9kp5FfE.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/7siIucMOOt.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/mMgiRe4PnY.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/623/623.mp3",
+  "start": 14.4
+ },
+ "data": {
+  "plate": "1857312",
+  "name": "פולקסווגן ג'טה 2012"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים סדאן לתקציב מצומצם?",
+   "show": "מחפשים סדאן לתקציב מצומצם?"
+  },
+  {
+   "beat": 1,
+   "say": "פולקסווגן ג'טה, אלפיים ושתים עשרה.",
+   "show": "גימור <b><span class=\"ltr\">TRENDLINE</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים שלושים ושלוש אלף ותשע מאות קילומטר.",
+   "show": "<span class=\"ltr\">233,900</span> ק״מ"
+  },
+  {
+   "beat": 2,
+   "say": "מאה עשרים ושתיים כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">122</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שבע עשרה אלף, שש מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">17,600 ₪</span></b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

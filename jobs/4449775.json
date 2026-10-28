@@ -1,0 +1,60 @@
+{
+ "plate": "4449775",
+ "images": [
+  "https://cm.auto360.co.il/uploads/10-26/QO6twhZvuj.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/hevJSuqBPB.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/TCC71Chl8h.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/tTsHYs3dhA.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/6orxKjBD3B.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/ZC6CEboZjQ.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/fEySZla7rv.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/TyN3DMTd8Z.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/0gEsZMH8JO.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/48dUhbq5OR.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/33/33.mp3",
+  "start": 10.4
+ },
+ "data": {
+  "plate": "4449775",
+  "name": "פורד פוקוס 2012"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים פורד פוקוס?",
+   "show": "מחפשים פורד פוקוס?"
+  },
+  {
+   "beat": 1,
+   "say": "פורד פוקוס, אלפיים ושתים עשרה.",
+   "show": "גימור <b><span class=\"ltr\">TREND</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ותשעים אלף קילומטר.",
+   "show": "<span class=\"ltr\">190,000</span> ק״מ"
+  },
+  {
+   "beat": 2,
+   "say": "מאה עשרים וחמש כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">125</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: עשרת אלפים, תשע מאות ארבעים וארבע שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">10,944 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

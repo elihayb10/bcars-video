@@ -1,0 +1,66 @@
+{
+ "plate": "82068603",
+ "images": [
+  "https://cm.auto360.co.il/uploads/09-26/QXmYpqSB5n.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/7n37b9cDUh.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/U4BcR9cwGK.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/U3jQNMBsW3.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/mGnTCL1z3P.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/Sgjnr190mJ.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/RH6kHwlgHP.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/TbuwIn7fS8.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/6XQFhbrZ2l.jpg",
+  "https://cm.auto360.co.il/uploads/09-26/HAIuoMI69y.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/258/258.mp3",
+  "start": 10.4
+ },
+ "data": {
+  "plate": "82068603",
+  "name": "גילי גיאומטרי C 2024"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים קרוסאובר חשמלי?",
+   "show": "מחפשים קרוסאובר חשמלי?"
+  },
+  {
+   "beat": 1,
+   "say": "גילי ג'יאומטרי סי, אלפיים עשרים וארבע.",
+   "show": "גימור <b><span class=\"ltr\">480PRO</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "שישים ושבע אלף קילומטר, יד ראשונה.",
+   "show": "<span class=\"ltr\">67,000</span> ק״מ | יד 1 פרטי"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים וארבע כוח סוס, חשמל, אוטומטית.",
+   "show": "חשמל · אוטומטי · <span class=\"ltr\">204</span> כ״ס"
+  },
+  {
+   "beat": 2,
+   "say": "",
+   "show": "טסט עד <span class=\"ltr\">28/07/2027</span>",
+   "hold": 1.6
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: מאה ושלוש אלף, שש מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">103,600 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

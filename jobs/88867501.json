@@ -1,0 +1,60 @@
+{
+ "plate": "88867501",
+ "images": [
+  "https://cm.auto360.co.il/uploads/05-26/cft1RoeQ1W.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/Q3LVhfLadr.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/Ze2mNeVc6u.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/ZWFeeP5YZe.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/r7fDNCFHQY.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/82ROwBusa5.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/g0FINGfMZZ.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/pMFdx2A6Jf.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/eUhKR13DU3.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/SZyUJuvXVl.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/739/739.mp3",
+  "start": 9
+ },
+ "data": {
+  "plate": "88867501",
+  "name": "מרצדס GLA200 2021"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים אֶס-יוּ-וִי קומפקטי של מרצדס?",
+   "show": "מחפשים <b>SUV</b> קומפקטי של מרצדס?"
+  },
+  {
+   "beat": 1,
+   "say": "מרצדס ג'י אל איי מאתיים, אלפיים עשרים ואחת.",
+   "show": "שנת <span class=\"ltr\">2021</span>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה חמישים ותשע אלף קילומטר.",
+   "show": "<span class=\"ltr\">159,000</span> ק״מ"
+  },
+  {
+   "beat": 2,
+   "say": "מאה שישים ושלוש כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">163</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: מאה חמישים ותשע אלף, שש מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">159,600 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

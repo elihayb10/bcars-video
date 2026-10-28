@@ -1,0 +1,60 @@
+{
+ "plate": "71402601",
+ "images": [
+  "https://cm.auto360.co.il/uploads/05-26/NoHWY40o1E.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/ZlDkqnxzsK.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/NzQirlE6Yd.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/hvR1EC2AcE.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/g18glvoqFp.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/puE6r0zJhM.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/MX2DfSxU6A.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/zhhVEfZek6.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/icAbOCEKG7.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/Zzj3bVsgsy.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/130/130.mp3",
+  "start": 14.1
+ },
+ "data": {
+  "plate": "71402601",
+  "name": "קיה נירו 2020"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים קרוסאובר משפחתי של קיה?",
+   "show": "מחפשים קרוסאובר משפחתי של קיה?"
+  },
+  {
+   "beat": 1,
+   "say": "קיה נירו, אלפיים ועשרים.",
+   "show": "גימור <b><span class=\"ltr\">LX</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה שישים ואחת אלף קילומטר.",
+   "show": "<span class=\"ltr\">161,000</span> ק״מ | יד 01"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ארבעים ואחת כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">141</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: מאה ושתיים אלף, שבע מאות ושבעים שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">102,770 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

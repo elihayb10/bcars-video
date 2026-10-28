@@ -1,0 +1,60 @@
+{
+ "plate": "64072001",
+ "images": [
+  "https://cm.auto360.co.il/uploads/08-26/R2disPKmpS.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/uCIfcYDLL8.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/i0Z74AxIOM.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/WUdiIKne9P.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/WhJQVvKawf.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/s8rCer1om3.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/qJ0SZeROF9.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/pAhwP79DFi.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/GEHOGCW1LX.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/Ns8CpMRLkg.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/130/130.mp3",
+  "start": 14.1
+ },
+ "data": {
+  "plate": "64072001",
+  "name": "רנו גרנד קופה 2019"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים סדאן משפחתי?",
+   "show": "מחפשים סדאן משפחתי?"
+  },
+  {
+   "beat": 1,
+   "say": "רנו גרנד קופה, אלפיים ותשע עשרה.",
+   "show": "גימור <b><span class=\"ltr\">ZEN</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים שלושים ושלוש אלף קילומטר.",
+   "show": "<span class=\"ltr\">233,000</span> ק״מ"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ועשר כוח סוס, דיזל, אוטומטית.",
+   "show": "דיזל · אוטומטי · <span class=\"ltr\">110</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: חמישים וחמש אלף, שמונה מאות ושישים שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">55,860 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

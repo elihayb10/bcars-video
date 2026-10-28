@@ -1,0 +1,60 @@
+{
+ "plate": "84365502",
+ "images": [
+  "https://cm.auto360.co.il/uploads/06-26/aCfTiRGDqQ.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/Y7UqICMPHQ.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/cdQCFCzWlR.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/93P6nBNvCz.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/sScXx3VJYr.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/G0jOed9Ciw.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/syZ62FD2ie.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/HExN3GPwc7.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/8PkHX71CDN.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/RZSWiP1ZrZ.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/282/282.mp3",
+  "start": 12
+ },
+ "data": {
+  "plate": "84365502",
+  "name": "סיטרואן ברלינגו 2022"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים רכב דיזל מרווח לעבודה ולמשפחה?",
+   "show": "מחפשים רכב דיזל מרווח לעבודה ולמשפחה?"
+  },
+  {
+   "beat": 1,
+   "say": "סיטרואן ברלינגו, אלפיים עשרים ושתיים.",
+   "show": "גימור <b><span class=\"ltr\">SHINE PK N1</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים ואחת אלף קילומטר.",
+   "show": "<span class=\"ltr\">201,000</span> ק״מ | יד 01"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ושלושים כוח סוס, דיזל, אוטומטית.",
+   "show": "דיזל · אוטומטי · <span class=\"ltr\">130</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: תשעים ושבע אלף, מאתיים שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">97,200 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

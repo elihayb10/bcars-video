@@ -1,0 +1,60 @@
+{
+ "plate": "85723001",
+ "images": [
+  "https://cm.auto360.co.il/uploads/08-26/5HOV4bhDgE.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/rzyUFREhTD.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/7vx44Sot1w.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/ILDoNEqMv0.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/T0yPMl03i6.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/N6EaXd564G.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/AG1Iz4Yykt.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/830uQ1HfY0.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/NoO3lNB41h.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/vZDkmZu9CC.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/130/130.mp3",
+  "start": 14.1
+ },
+ "data": {
+  "plate": "85723001",
+  "name": "פיאט דובלו 2020"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים רכב מרווח לעבודה ולמשפחה?",
+   "show": "מחפשים רכב מרווח לעבודה ולמשפחה?"
+  },
+  {
+   "beat": 1,
+   "say": "פיאט דובלו, אלפיים ועשרים.",
+   "show": "גימור <b><span class=\"ltr\">COMBI</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה חמישים ושש אלף קילומטר.",
+   "show": "<span class=\"ltr\">156,000</span> ק״מ | יד 01"
+  },
+  {
+   "beat": 2,
+   "say": "מאה וחמש כוח סוס, דיזל, ידנית.",
+   "show": "דיזל · ידני · <span class=\"ltr\">105</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: חמישים אלף, שש מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">50,600 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "plate": "80290202",
+ "images": [
+  "https://cm.auto360.co.il/uploads/04-26/zry6AGgsiY.jpg",
+  "https://cm.auto360.co.il/uploads/04-26/UEoVDHVkvE.jpg",
+  "https://cm.auto360.co.il/uploads/04-26/3UumasedTi.jpg",
+  "https://cm.auto360.co.il/uploads/04-26/2trSyjouyz.jpg",
+  "https://cm.auto360.co.il/uploads/04-26/FvSCIXppm7.jpg",
+  "https://cm.auto360.co.il/uploads/04-26/63bBCJLq3i.jpg",
+  "https://cm.auto360.co.il/uploads/04-26/VHkSsAscmR.jpg",
+  "https://cm.auto360.co.il/uploads/04-26/kJaNjX2O3Z.jpg",
+  "https://cm.auto360.co.il/uploads/04-26/KSPfM5SdfJ.jpg",
+  "https://cm.auto360.co.il/uploads/04-26/2dCOaLexur.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/371/371.mp3",
+  "start": 12.3
+ },
+ "data": {
+  "plate": "80290202",
+  "name": "קאדילאק XT4 2022"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים אֶס-יוּ-וִי יוקרה קומפקטי של קאדילאק?",
+   "show": "מחפשים <b>SUV</b> יוקרה קומפקטי של קאדילאק?"
+  },
+  {
+   "beat": 1,
+   "say": "קאדילאק אקס טי ארבע, אלפיים עשרים ושתיים.",
+   "show": "גימור <b><span class=\"ltr\">Premium</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה שלושים ושתיים אלף קילומטר, יד ראשונה.",
+   "show": "<span class=\"ltr\">132,000</span> ק״מ | יד 1 פרטי"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים שלושים ושבע כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">237</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: מאה שישים ושלוש אלף, שמונה מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">163,800 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

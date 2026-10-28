@@ -1,0 +1,66 @@
+{
+ "plate": "79959401",
+ "images": [
+  "https://cm.auto360.co.il/uploads/07-26/JjR5o2U1AR.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/qvO18JeiUR.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/1rK2jBLtq9.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/m9tMRdlCU8.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/8MFo05FPOu.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/h0ZLxoz7oB.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/mqh3lp0Tl0.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/bNU8zmGFia.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/RUtS9w7r8W.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/QPz35u2Z9i.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/130/130.mp3",
+  "start": 14.1
+ },
+ "data": {
+  "plate": "79959401",
+  "name": "סובארו XV 2019"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים קרוסאובר קומפקטי של סובארו?",
+   "show": "מחפשים קרוסאובר קומפקטי של סובארו?"
+  },
+  {
+   "beat": 1,
+   "say": "סובארו אקס וי, אלפיים ותשע עשרה.",
+   "show": "גימור <b><span class=\"ltr\">CROSSTREK</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים שלושים ואחת אלף קילומטר.",
+   "show": "<span class=\"ltr\">231,000</span> ק״מ | יד 01"
+  },
+  {
+   "beat": 2,
+   "say": "מאה חמישים ושתיים כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">152</span> כ״ס"
+  },
+  {
+   "beat": 2,
+   "say": "",
+   "show": "טסט עד <span class=\"ltr\">17/06/2027</span>",
+   "hold": 1.6
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שבעים וחמש אלף שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">75,000 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "plate": "9151332",
+ "images": [
+  "https://cm.auto360.co.il/uploads/10-26/C7HoXhnGwo.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/Ajs12SwoCf.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/5kURMty3zx.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/YBIWM7AYIb.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/bZBIKp1zsF.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/WulnIj5jK8.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/ZyL3dqIsZc.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/tcXgjH8gDR.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/d87GiF94LM.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/77sOhLVFgX.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/471/471.mp3",
+  "start": 14.9
+ },
+ "data": {
+  "plate": "9151332",
+  "name": "שברולט מאליבו 2015"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים שברולט מאליבו?",
+   "show": "מחפשים שברולט מאליבו?"
+  },
+  {
+   "beat": 1,
+   "say": "שברולט מאליבו, אלפיים וחמש עשרה.",
+   "show": "גימור <b><span class=\"ltr\">LT</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים ארבעים ושתיים אלף קילומטר.",
+   "show": "<span class=\"ltr\">242,000</span> ק״מ"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים חמישים ותשע כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">259</span> כ״ס"
+  },
+  {
+   "beat": 2,
+   "say": "",
+   "show": "טסט עד <span class=\"ltr\">29/04/2027</span>",
+   "hold": 1.6
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: עשרים וארבע אלף, חמש מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">24,500 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

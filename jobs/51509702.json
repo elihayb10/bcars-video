@@ -1,0 +1,66 @@
+{
+ "plate": "51509702",
+ "images": [
+  "https://cm.auto360.co.il/uploads/10-26/uhEiZCEWh8.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/OiZIhPbBHT.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/7enevX0zLP.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/vrGdStmDyz.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/t9HVzG6MGI.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/Gzc910UsOv.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/rj1cuzdNZZ.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/LmAKByE8vu.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/5CXMFglC0H.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/gmSoemBZa0.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/282/282.mp3",
+  "start": 12
+ },
+ "data": {
+  "plate": "51509702",
+  "name": "שברולט סילברדו 2021"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים טנדר פוֹר בַּיי פוֹר לעבודה ולשטח?",
+   "show": "מחפשים טנדר 4X4 לעבודה ולשטח?"
+  },
+  {
+   "beat": 1,
+   "say": "שברולט סילברדו, אלפיים עשרים ואחת.",
+   "show": "גימור <b><span class=\"ltr\">LTZ 4X4</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "שלוש מאות ואחת עשרה אלף קילומטר.",
+   "show": "<span class=\"ltr\">311,000</span> ק״מ | יד 01"
+  },
+  {
+   "beat": 2,
+   "say": "ארבע מאות ארבעים וחמש כוח סוס, דיזל, אוטומטית.",
+   "show": "דיזל · אוטומטי · <span class=\"ltr\">445</span> כ״ס"
+  },
+  {
+   "beat": 2,
+   "say": "",
+   "show": "טסט עד <span class=\"ltr\">25/09/2027</span>",
+   "hold": 1.6
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: מאה חמישים ואחת אלף, תשע מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">151,900 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

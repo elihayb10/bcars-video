@@ -1,0 +1,60 @@
+{
+ "plate": "36017302",
+ "images": [
+  "https://cm.auto360.co.il/uploads/10-26/Up481F7xrR.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/FRElLtRzYx.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/7UkwVBLVPh.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/ix8yeYMdtW.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/D9I48T2vKX.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/mKgNRC2I5m.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/f1jvB3u9PZ.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/pqtoyGYnre.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/yg0oiWUBmq.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/dSAqny5IIY.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/282/282.mp3",
+  "start": 12
+ },
+ "data": {
+  "plate": "36017302",
+  "name": "יונדאי I20 2021"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים האצ'בק לנסיעה יומיומית?",
+   "show": "מחפשים האצ'בק לנסיעה יומיומית?"
+  },
+  {
+   "beat": 1,
+   "say": "יונדאי איי עשרים, אלפיים עשרים ואחת.",
+   "show": "גימור <b><span class=\"ltr\">Intense</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה חמישים ושלוש אלף קילומטר, יד ראשונה.",
+   "show": "<span class=\"ltr\">153,000</span> ק״מ | יד 1"
+  },
+  {
+   "beat": 2,
+   "say": "מאה כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">100</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שבעים ואחת אלף, ארבע מאות וארבעים שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">71,440 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

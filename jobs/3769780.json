@@ -1,0 +1,60 @@
+{
+ "plate": "3769780",
+ "images": [
+  "https://cm.auto360.co.il/uploads/10-26/H8D0CyQpSu.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/FtjsxNYATK.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/gcu5CSXeWr.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/2JyFIVqlRg.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/BitubyUYwt.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/aja0DgcnbY.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/hyPv5Odkbz.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/g5CdF3iVsp.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/PV3mNzmSGa.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/4omrivVes4.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/471/471.mp3",
+  "start": 14.9
+ },
+ "data": {
+  "plate": "3769780",
+  "name": "סקודה סופרב 2017"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים סדאן גדול ומרווח?",
+   "show": "מחפשים סדאן גדול ומרווח?"
+  },
+  {
+   "beat": 1,
+   "say": "סקודה סופרב, אלפיים ושבע עשרה.",
+   "show": "גימור <b><span class=\"ltr\">Ambition</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים שישים ושלוש אלף קילומטר.",
+   "show": "<span class=\"ltr\">263,000</span> ק״מ"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ושמונים כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">180</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: חמישים ושלוש אלף שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">53,000 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

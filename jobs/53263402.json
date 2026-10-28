@@ -1,0 +1,60 @@
+{
+ "plate": "53263402",
+ "images": [
+  "https://cm.auto360.co.il/uploads/06-26/Re2Vr9mzxa.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/j3bZayr6G7.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/A2JQVt5dx0.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/evR1j6loaT.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/ZZXdNyJtB4.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/hD5jNad1Aa.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/YDibEYGfPh.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/RyRaLw5NTN.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/tjJcVpMqFx.jpg",
+  "https://cm.auto360.co.il/uploads/06-26/ubYYm1sK90.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/371/371.mp3",
+  "start": 12.3
+ },
+ "data": {
+  "plate": "53263402",
+  "name": "סקודה אוקטביה 2021"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים רכב משפחתי?",
+   "show": "מחפשים רכב משפחתי?"
+  },
+  {
+   "beat": 1,
+   "say": "סקודה אוקטביה, אלפיים עשרים ואחת.",
+   "show": "גימור <b><span class=\"ltr\">Ambition</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "שבעים ושש אלף קילומטר.",
+   "show": "<span class=\"ltr\">76,000</span> ק״מ"
+  },
+  {
+   "beat": 2,
+   "say": "מאה וחמישים כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">150</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: מאה ושש אלף, שמונה מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">106,800 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

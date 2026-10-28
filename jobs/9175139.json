@@ -1,0 +1,60 @@
+{
+ "plate": "9175139",
+ "images": [
+  "https://cm.auto360.co.il/uploads/08-26/1WFmzcKkz4.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/byVvAlL5ng.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/KoVZKuocW8.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/1oSIAmuRK1.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/OU3hRcqHxl.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/UCFBnde6LP.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/C0vU92iwH3.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/I3hKzzKU79.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/t4KaK1VyqO.jpg",
+  "https://cm.auto360.co.il/uploads/08-26/3KnFo3tMCz.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/258/258.mp3",
+  "start": 10.4
+ },
+ "data": {
+  "plate": "9175139",
+  "name": "יונדאי טוסון 2017"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים אֶס-יוּ-וִי משפחתי?",
+   "show": "מחפשים <b>SUV</b> משפחתי?"
+  },
+  {
+   "beat": 1,
+   "say": "יונדאי טוסון, אלפיים ושבע עשרה.",
+   "show": "גימור <b><span class=\"ltr\">Premium</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ארבעים ושלוש אלף קילומטר.",
+   "show": "<span class=\"ltr\">143,000</span> ק״מ"
+  },
+  {
+   "beat": 2,
+   "say": "מאה חמישים וחמש כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">155</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שישים וארבע אלף שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">64,000 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}
