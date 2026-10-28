@@ -1,0 +1,60 @@
+{
+ "plate": "30145402",
+ "images": [
+  "https://cm.auto360.co.il/uploads/10-26/LiFxMMCPki.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/So8mAv0vhp.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/idt0fJc59i.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/AcpSCgZlNo.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/QRtPGLLGtg.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/HKO0xYZazx.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/ZZRtwpY6em.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/o3mq054l3H.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/8p8QpE1EEF.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/8hpn87OXTh.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/371/371.mp3",
+  "start": 12.3
+ },
+ "data": {
+  "plate": "30145402",
+  "name": "שברולט ספארק 2021"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים רכב קומפקטי לעיר?",
+   "show": "מחפשים רכב קומפקטי לעיר?"
+  },
+  {
+   "beat": 1,
+   "say": "שברולט ספארק, אלפיים עשרים ואחת.",
+   "show": "גימור <b><span class=\"ltr\">LT PLUS</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה אלף קילומטר.",
+   "show": "<span class=\"ltr\">100,000</span> ק״מ | יד 01"
+  },
+  {
+   "beat": 2,
+   "say": "תשעים ושמונה כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">98</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שישים ושש אלף, שמונה מאות וארבעים שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">66,840 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}
