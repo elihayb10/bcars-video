@@ -1,0 +1,61 @@
+{
+ "plate": "26568403",
+ "images": [
+  "https://cm.auto360.co.il/uploads/10-26/CjD6D38eCv.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/pDAEDhqO16.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/iH5y3UTjNR.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/TM1Q8touuW.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/hK115elQFN.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/bAu00JMhqs.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/eWIWqUCK9E.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/seSgkeFQcX.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/oQctphbXHH.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/Y5na6ExKCK.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/258/258.mp3",
+  "start": 10.4
+ },
+ "data": {
+  "plate": "26568403",
+  "name": "סיאט קופרה 2023"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים קרוסאובר ספורטיבי של קופרה?",
+   "show": "מחפשים קרוסאובר ספורטיבי של קופרה?"
+  },
+  {
+   "beat": 1,
+   "say": "סיאט קופרה, אלפיים עשרים ושלוש.",
+   "show": "גימור <b><span class=\"ltr\">FORMENTOR</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "שמונים ותשע אלף קילומטר, יד ראשונה.",
+   "show": "<span class=\"ltr\">89,000</span> ק״מ | יד 1"
+  },
+  {
+   "beat": 2,
+   "say": "מאה וחמישים כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">150</span> כ״ס"
+  },
+  {
+   "beat": 2,
+   "say": "",
+   "show": "טסט עד <span class=\"ltr\">24/06/2027</span>",
+   "hold": 1.6
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: מאה עשרים ושש אלף, חמש מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">126,500 ₪</span></b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

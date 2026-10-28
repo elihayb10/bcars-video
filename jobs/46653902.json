@@ -1,0 +1,60 @@
+{
+ "plate": "46653902",
+ "images": [
+  "https://cm.auto360.co.il/uploads/07-26/WLEPj57yga.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/a9VTtOroDO.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/V2zphHvSj0.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/2AWImEvzjM.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/azUonWgMUY.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/lZ6uE9Hm0B.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/brdDH86Yx5.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/SQYuk68LbZ.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/gH5v56D1UU.jpg",
+  "https://cm.auto360.co.il/uploads/07-26/JVzRHhfQ5r.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/282/282.mp3",
+  "start": 12
+ },
+ "data": {
+  "plate": "46653902",
+  "name": "יונדאי אקסנט 2021"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים סדאן קומפקטי?",
+   "show": "מחפשים סדאן קומפקטי?"
+  },
+  {
+   "beat": 1,
+   "say": "יונדאי אקסנט, אלפיים עשרים ואחת.",
+   "show": "גימור <b><span class=\"ltr\">INSPIRE</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאתיים עשרים ושמונה אלף קילומטר.",
+   "show": "<span class=\"ltr\">228,000</span> ק״מ | יד 01"
+  },
+  {
+   "beat": 2,
+   "say": "מאה עשרים ושלוש כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">123</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שישים אלף, שש מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">60,600 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

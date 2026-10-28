@@ -1,0 +1,66 @@
+{
+ "plate": "83628901",
+ "images": [
+  "https://cm.auto360.co.il/uploads/10-26/uTpqdgtlyn.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/pKdQ6SUHKB.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/aymae1PRti.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/JON38JLvDQ.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/aVzfCRrayg.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/HXclFdpaE7.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/E5jZDUh02E.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/GxeqCn2ji5.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/kOGa9IawDS.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/3R0koRIMKC.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/739/739.mp3",
+  "start": 9
+ },
+ "data": {
+  "plate": "83628901",
+  "name": "סיאט ארונה 2019"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים קרוסאובר קטן לעיר ולמשפחה צעירה?",
+   "show": "מחפשים קרוסאובר קטן לעיר ולמשפחה צעירה?"
+  },
+  {
+   "beat": 1,
+   "say": "סיאט ארונה, אלפיים ותשע עשרה.",
+   "show": "גימור <b><span class=\"ltr\">Style</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה שישים ושמונה אלף קילומטר.",
+   "show": "<span class=\"ltr\">168,000</span> ק״מ"
+  },
+  {
+   "beat": 2,
+   "say": "מאה וחמש עשרה כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">115</span> כ״ס"
+  },
+  {
+   "beat": 2,
+   "say": "",
+   "show": "טסט עד <span class=\"ltr\">15/09/2027</span>",
+   "hold": 1.6
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שישים וחמש אלף שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">65,000 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

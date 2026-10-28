@@ -1,0 +1,60 @@
+{
+ "plate": "24697103",
+ "images": [
+  "https://cm.auto360.co.il/uploads/10-26/BhuCPzH0Fu.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/L08DyHBlSM.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/Eu49qMOPhP.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/ie7U1q2sf7.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/OjFAegQ62g.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/ONNLmRP3de.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/jMJklOmxfW.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/3EtVpTGkTz.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/pj2Rg9Lp2n.jpg",
+  "https://cm.auto360.co.il/uploads/10-26/646C5saz4G.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/33/33.mp3",
+  "start": 10.4
+ },
+ "data": {
+  "plate": "24697103",
+  "name": "קרייזלר דודג׳ ראם 2023"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים טנדר אמריקאי גדול?",
+   "show": "מחפשים טנדר אמריקאי גדול?"
+  },
+  {
+   "beat": 1,
+   "say": "דודג' ראם, אלפיים עשרים ושלוש.",
+   "show": "גימור <b><span class=\"ltr\">LARAMIE PLUS</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ועשרים אלף קילומטר.",
+   "show": "<span class=\"ltr\">120,000</span> ק״מ | יד 01"
+  },
+  {
+   "beat": 2,
+   "say": "שלוש מאות ושבעים כוח סוס, דיזל, אוטומטית.",
+   "show": "דיזל · אוטומטי · <span class=\"ltr\">370</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: מאה ושמונים אלף, שלוש מאות תשעים ושמונה שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">180,398 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

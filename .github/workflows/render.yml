@@ -1,0 +1,48 @@
+name: render
+# Builds a video for every job in jobs/ that has no up-to-date video in videos/.
+# Each video gets a stamp file (videos/<plate>.json) holding the job's hash; changing the job rebuilds it.
+on:
+  push:
+    branches: [main]
+    paths: ['jobs/**', 'template/**', 'render.mjs', '.github/workflows/render.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: render
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji >/dev/null
+          npm install --no-audit --no-fund gsap@3.14.2
+      - name: Render pending jobs
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          set -e
+          shopt -s nullglob
+          for j in jobs/*.json; do
+            plate=$(basename "$j" .json)
+            hash=$(sha1sum "$j" template/index.html render.mjs | sha1sum | cut -c1-12)
+            if [ -f "videos/$plate.json" ] && grep -q "\"$hash\"" "videos/$plate.json"; then echo "skip $plate"; continue; fi
+            node render.mjs "$j"
+            echo "{\"plate\":\"$plate\",\"hash\":\"$hash\",\"at\":\"$(date -u +%FT%TZ)\"}" > "videos/$plate.json"
+          done
+      - name: Commit videos
+        run: |
+          git config user.name "bcars-video-bot"
+          git config user.email "bcars-video-bot@users.noreply.github.com"
+          git add videos
+          git diff --cached --quiet && echo "nothing new" && exit 0
+          git commit -m "videos: $(git diff --cached --name-only | grep -c mp4) rendered"
+          git pull --rebase
+          git push

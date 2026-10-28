@@ -1,0 +1,60 @@
+{
+ "plate": "25457002",
+ "images": [
+  "https://cm.auto360.co.il/uploads/05-26/ypnMzTTl2S.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/TQaHROeJn3.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/9UxmcK2dzj.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/el2wrtN03D.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/sCG2OeSmPg.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/rcI6FofDPR.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/41rC21x4th.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/rJLN61qI2j.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/xRpg5F4PKU.jpg",
+  "https://cm.auto360.co.il/uploads/05-26/Xp8fxUHO92.jpg"
+ ],
+ "music": {
+  "url": "https://assets.mixkit.co/music/371/371.mp3",
+  "start": 12.3
+ },
+ "data": {
+  "plate": "25457002",
+  "name": "קיה פיקנטו 2020"
+ },
+ "segs": [
+  {
+   "beat": 1,
+   "say": "מחפשים רכב קטן לעיר?",
+   "show": "מחפשים רכב קטן לעיר?"
+  },
+  {
+   "beat": 1,
+   "say": "קיה פיקנטו, אלפיים ועשרים.",
+   "show": "גימור <b><span class=\"ltr\">LX</span></b>"
+  },
+  {
+   "beat": 2,
+   "say": "מאה ותשעים אלף קילומטר.",
+   "show": "<span class=\"ltr\">190,000</span> ק״מ | יד 01"
+  },
+  {
+   "beat": 2,
+   "say": "שמונים וארבע כוח סוס, אוטומטית.",
+   "show": "בנזין · אוטומטי · <span class=\"ltr\">84</span> כ״ס"
+  },
+  {
+   "beat": 3,
+   "say": "מחירון לוי יצחק: שישים וארבע אלף, ארבע מאות שקל.",
+   "show": "מחירון לוי יצחק: <b><span class=\"ltr\">64,400 ₪</span></b>"
+  },
+  {
+   "beat": 3,
+   "say": "ואצלנו? מתחת למחירון.",
+   "show": "אצלנו <b>מתחת למחירון</b>"
+  },
+  {
+   "beat": 5,
+   "say": "לבירור מחיר או הצעת טרייד-אין, שלחו הודעה בוואטסאפ.",
+   "show": ""
+  }
+ ]
+}

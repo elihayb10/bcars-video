@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>מודעת וידאו לרכב – בית הרכב</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Heebo"; src: url("assets/fonts/Heebo.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      @font-face { font-family: "Karantina"; src: url("assets/fonts/Karantina-Bold.ttf") format("truetype"); font-weight: 700; font-display: block; }
+      :root { --deep: #06231a; --gold: #fcb216; --gold2: #ffc83d; --ink: #fffdf7; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #06231a; font-family: "Heebo", sans-serif; color: var(--ink); }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: radial-gradient(ellipse 90% 55% at 50% 42%, #0c3f2e 0%, #06231a 70%); }
+      .full { position: absolute; inset: 0; }
+      .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+
+      /* text lives only in Meta's safe zone: y 290-1250, 65px from the sides (Reels UI + the 4:5 feed crop) */
+      #name { position: absolute; top: 296px; left: 65px; right: 65px; text-align: center; direction: rtl; font-weight: 900; font-size: 46px; line-height: 1; color: var(--gold2); white-space: nowrap; }
+      .cap { position: absolute; top: 352px; left: 65px; right: 65px; height: 170px; display: flex; align-items: center; justify-content: center; direction: rtl; opacity: 0;
+        font-family: "Karantina", "Heebo", sans-serif; font-weight: 700; line-height: 0.95; color: #fff; white-space: nowrap;
+        -webkit-text-stroke: 5px #000; paint-order: stroke fill; text-shadow: 0 7px 0 rgba(0,0,0,0.5), 0 14px 30px rgba(0,0,0,0.55); }
+      .cap b { color: var(--gold2); font-weight: 700; }
+
+      /* the car: full width, the whole photo (no crop that cuts the car), gentle motion only */
+      .photo { position: absolute; left: 0; top: 540px; width: 1080px; height: 810px; overflow: hidden; background: #0b2e22; }
+      .photo img { position: absolute; left: 0; top: 0; width: 1080px; height: 810px; object-fit: cover; opacity: 0; transform-origin: 50% 60%; }
+      .photo .fl { position: absolute; inset: 0; background: #fff; opacity: 0; }
+
+      /* filmstrip of the 10 photos under the car: where we are in the gallery (no text, so the Reels UI may cover it) */
+      .strip { position: absolute; left: 24px; top: 1372px; width: 1032px; display: flex; gap: 8px; direction: rtl; }
+      .strip i { position: relative; width: 96px; height: 72px; border-radius: 10px; overflow: hidden; display: block; opacity: 0.45; box-shadow: 0 0 0 2px rgba(255,253,247,0.18); }
+      .strip i img { width: 96px; height: 72px; object-fit: cover; display: block; }
+
+      /* end card */
+      #end { opacity: 0; background: radial-gradient(ellipse 80% 50% at 50% 40%, rgba(252,178,22,0.16), rgba(6,35,26,0) 70%), #06231a; }
+      /* one column, so nothing can overlap: the ask and the phone first (inside the safe zone), then the car big */
+      #endCol { position: absolute; top: 292px; left: 40px; right: 40px; display: flex; flex-direction: column; align-items: center; gap: 20px; direction: rtl; }
+      #endLogo img { width: 190px; display: block; }
+      #endAsk { font-family: "Karantina", "Heebo", sans-serif; font-weight: 700; font-size: 84px; line-height: 0.9; color: #fff; -webkit-text-stroke: 4px #000; paint-order: stroke fill; white-space: nowrap; }
+      #endWa { display: flex; align-items: center; gap: 16px; background: var(--gold); color: #06231a; font-weight: 900; font-size: 60px; line-height: 1; padding: 12px 40px 16px; border-radius: 999px; direction: ltr; box-shadow: 0 18px 44px rgba(0,0,0,0.45); }
+      #endWa svg { width: 54px; height: 54px; }
+      #endCar { width: 920px; height: 690px; border-radius: 28px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 0 4px rgba(255,253,247,0.15); }
+      #endCar img { width: 920px; height: 690px; object-fit: cover; display: block; }
+      #endTrade { font-size: 46px; font-weight: 800; color: var(--ink); white-space: nowrap; }
+      #endTrade b { color: var(--gold2); }
+      #endHint { display: flex; align-items: center; gap: 14px; font-size: 38px; font-weight: 700; color: rgba(255,253,247,0.88); }
+      #endHint svg { width: 36px; height: 36px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="18">
+      <div id="main" class="clip full" data-start="0" data-duration="18" data-track-index="1"><div id="stage" class="full"></div></div>
+      <div id="endClip" class="clip full" data-start="0" data-duration="18" data-track-index="2">
+        <div id="end" class="full">
+          <div id="endCol">
+            <div id="endLogo"><img src="assets/brand/logo-white.png" alt="" /></div>
+            <div id="endAsk">לבירור מחיר או הצעת טרייד־אין</div>
+            <div id="endWa"><svg viewBox="0 0 32 32"><path fill="#06231a" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 9.9 5.1 16 5.1S27 9.9 27 15.8 22.1 26.4 16 26.4zm6-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>04-640-1666</span></div>
+            <div id="endCar"><img id="endCarImg" alt="" /></div>
+            <div id="endHint"><span>לחצו על הכפתור למטה</span><svg viewBox="0 0 24 24"><path fill="#ffc83d" d="M12 21l-8-8h5V3h6v10h5z"/></svg></div>
+          </div>
+        </div>
+      </div>
+      <audio id="mix" src="build/mix.wav" data-start="0" data-duration="18" data-track-index="9"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      // DATA: the car (from bcars.co.il, via the inventory machine). TL: the timeline render.mjs computed from the narration.
+      const D = /*DATA*/{"plate":"11815203","name":"יונדאי טוסון 2022"}/*DATA*/;
+      const TL = /*TL*/{"total":18,"end":15,"segs":[],"photos":[]}/*TL*/;
+      const tl = gsap.timeline({ paused: true });
+      const $ = (s, r = document) => r.querySelector(s);
+      const H = (html) => { const t = document.createElement("template"); t.innerHTML = html.trim(); return t.content.firstChild; };
+      const S = $("#stage");
+
+      // the car's name stays on top until the end card
+      const name = H(`<div id="name">${D.name}</div>`); S.appendChild(name);
+      tl.fromTo(name, { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.25 }, 0);
+
+      // the photos, in the site's order; the first one is on screen from frame 0
+      const ph = H(`<div class="photo">${Array.from({ length: 10 }, (_, n) => `<img src="assets/cars/${D.plate}-${String(n + 1).padStart(2, "0")}.jpg" alt="">`).join("")}<div class="fl"></div></div>`);
+      S.appendChild(ph);
+      const imgs = [...ph.querySelectorAll("img")], fl = $(".fl", ph);
+      TL.photos.forEach((p, k) => {
+        const im = imgs[p.n - 1], d = p.e - p.s;
+        tl.set(im, { opacity: 1, zIndex: k + 1 }, p.s);
+        tl.fromTo(im, { scale: 1.0, xPercent: 0 }, { scale: 1.07, xPercent: k % 2 ? -1.5 : 1.5, duration: d, ease: "none", immediateRender: k === 0 }, p.s);
+        if (k > 0) tl.fromTo(fl, { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, p.s);
+        tl.set(im, { opacity: 0 }, p.e);
+      });
+
+      const strip = H(`<div class="strip">${Array.from({ length: 10 }, (_, n) => `<i><img src="assets/cars/${D.plate}-${String(n + 1).padStart(2, "0")}.jpg" alt=""></i>`).join("")}</div>`);
+      S.appendChild(strip);
+      const th = [...strip.querySelectorAll("i")];
+      TL.photos.forEach((p) => {
+        const t = th[p.n - 1];
+        tl.fromTo(t, { opacity: 0.45, scale: 1, boxShadow: "0 0 0 2px rgba(255,253,247,0.18)" }, { opacity: 1, scale: 1.12, boxShadow: "0 0 0 4px #fcb216", duration: 0.18, ease: "power2.out", immediateRender: false }, p.s);
+        tl.to(t, { opacity: 0.8, scale: 1, boxShadow: "0 0 0 2px rgba(255,253,247,0.3)", duration: 0.18 }, p.e);
+      });
+
+      // captions: one at a time, each exactly while the narrator says it; the size fits the width
+      TL.segs.forEach((g) => {
+        const el = H(`<div class="cap"><span class="ci">${g.show}</span></div>`); S.appendChild(el);
+        const ci = $(".ci", el); let size = 150; el.style.fontSize = size + "px";
+        while (ci.getBoundingClientRect().width > 940 && size > 60) { size -= 4; el.style.fontSize = size + "px"; }
+        const first = g === TL.segs[0];
+        tl.fromTo(el, { opacity: first ? 1 : 0, scale: first ? 1 : 1.25, y: first ? 0 : 8 }, { opacity: 1, scale: 1, y: 0, duration: 0.14, ease: "back.out(2)", immediateRender: first }, first ? 0 : g.s);
+        tl.set(el, { opacity: 0 }, g.e);
+      });
+
+      // end card: logo, the car again, WhatsApp
+      $("#endCarImg").src = `assets/cars/${D.plate}-01.jpg`;
+      tl.set("#stage", { opacity: 1 }, 0);
+      tl.to("#stage", { opacity: 0, duration: 0.2 }, TL.end);
+      tl.fromTo("#end", { opacity: 0 }, { opacity: 1, duration: 0.2 }, TL.end);
+      tl.fromTo("#endLogo", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, TL.end + 0.05);
+      tl.fromTo("#endCar", { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, TL.end + 0.55);
+      tl.fromTo("#endAsk", { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, TL.end + 0.15);
+      tl.fromTo("#endWa", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, TL.end + 0.3);
+      tl.fromTo("#endHint", { opacity: 0 }, { opacity: 1, duration: 0.3 }, TL.end + 1.0);
+      tl.fromTo("#endHint svg", { y: -6 }, { y: 8, duration: 0.35, yoyo: true, repeat: 5, ease: "sine.inOut", immediateRender: false }, TL.end + 1.0);
+      tl.fromTo("#endWa", { scale: 1 }, { scale: 1.06, duration: 0.35, yoyo: true, repeat: 3, ease: "sine.inOut", immediateRender: false }, TL.end + 0.9);
+      tl.set({}, {}, TL.total);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
