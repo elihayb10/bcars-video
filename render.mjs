@@ -1,4 +1,4 @@
-// בונה סרטון מודעה לרכב אחד מתוך משימה: node render.mjs jobs/<plate>.json
+// בונה סרטון מודעה לרכב אחד מתוך משימה: node render.mjs jobs/<plate>.json [out.mp4]
 // המשימה נכתבת ע"י מכונת המלאי (bcars_ads.js) מנתוני האתר: מה נאמר ומה כתוב על המסך. כאן אין החלטה על תוכן, רק בנייה.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -112,9 +112,12 @@ html = html.replace(/data-duration="18"/g, `data-duration="${total}"`);
 fs.writeFileSync(path.join(work, 'index.html'), html);
 fs.writeFileSync(path.join(work, 'build/timeline.json'), JSON.stringify({ TL, segs }, null, 1));
 
-const out = path.join(root, 'videos', `${job.plate}.mp4`);
+const out = path.resolve(process.argv[3] || path.join(root, 'out', `${job.plate}.mp4`));
 fs.mkdirSync(path.dirname(out), { recursive: true });
-execFileSync('npx', ['--yes', 'hyperframes@0.8.157', 'render', '-o', out], { cwd: work, stdio: 'inherit', shell: process.platform === 'win32' });
+const raw = path.join(work, 'build/raw.mp4');
+execFileSync('npx', ['--yes', 'hyperframes@0.8.157', 'render', '-o', raw], { cwd: work, stdio: 'inherit', shell: process.platform === 'win32' });
+// דחיסה: כ-5 מגה במקום 21, בלי הבדל שרואים בטלפון. faststart: מטא והטלפון מתחילים לנגן לפני סוף ההורדה
+ff('-i', raw, '-c:v', 'libx264', '-preset', 'slow', '-crf', '23', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out);
 
 // 6. בדיקה של התוצאה
 const p = JSON.parse(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration:stream=codec_type,width,height', '-of', 'json', out]).toString());
@@ -122,4 +125,5 @@ const v = p.streams.find((s) => s.codec_type === 'video'), au = p.streams.find((
 if (!v || v.width !== 1080 || v.height !== 1920) throw new Error('גודל שגוי');
 if (!au) throw new Error('אין סאונד');
 if (Math.abs(dur(out) - total) > 0.5) throw new Error(`משך שגוי: ${dur(out)} במקום ${total}`);
-console.log(`OK ${job.plate} ${total}s · ${segs.length} משפטים`);
+if (fs.statSync(out).size > 15e6) throw new Error(`קובץ גדול מדי: ${(fs.statSync(out).size / 1e6).toFixed(1)} מגה`);
+console.log(`OK ${job.plate} ${total}s · ${segs.length} משפטים · ${(fs.statSync(out).size / 1e6).toFixed(1)} מגה`);
