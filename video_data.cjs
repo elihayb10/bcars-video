@@ -136,7 +136,7 @@ function computeAges(cars, now = Date.now()) {
 
 // מלאי auto360 (API של התוסף): מקור שני שמאשר שרכב נמכר. פרטי הגישה ממשתני סביבה, לא בקוד
 // למה auto360 לא זמין (נכתב בדוח האיסוף, בלי פרטי הגישה עצמם)
-let auto360Why = '', auto360Body = {};
+let auto360Why = '', auto360Body = {}, auto360Info = {};
 async function auto360() {
   const email = process.env.AUTO360_EMAIL, code = process.env.AUTO360_CODE;
   if (!email || !code) { auto360Why = 'אין משתני סביבה AUTO360_EMAIL / AUTO360_CODE'; return null; }
@@ -151,6 +151,9 @@ async function auto360() {
     if (!Array.isArray(v) || v.length < CFG.minSiteCars) { auto360Why = 'המלאי החזיר ' + (Array.isArray(v) ? v.length : 0) + ' רכבים'; return null; }
     const av = v.filter(x => x.status === 'available');
     for (const x of av) auto360Body[digits(x.license_plate)] = x.body_style || '';
+    // לבדיקת התאמה מול האתר (29.10.2026): מחירון, גימור, מקוריות, תוקף טסט, יד אמיתית
+    for (const x of av) auto360Info[digits(x.license_plate)] = { list: x.list_price_ils || 0, trim: x.finish_level || '', origin: x.original_ownership || '',
+      testExp: x.license_expiration || '', hand: x.hand || 0 };
     return av.map(x => digits(x.license_plate)); // price_ils = מחיר מכירה: לא נשמר בשום מקום
   } catch (e) { auto360Why = 'שגיאת רשת: ' + e.message; return null; }
 }
@@ -164,6 +167,38 @@ async function stockFromGithub() {
     auto360Body = j.body || {}; auto360Why = '';
     return j.plates;
   } catch (e) { auto360Why += '; הרשימה מגיטהאב לא נטענה: ' + e.message; return null; }
+}
+
+// משרד התחבורה (data.gov.il, מאגר פתוח): כוח סוס, נפח ומושבים לפי מספר רישוי, לבדיקת התאמה מול האתר (29.10.2026).
+// רכב רגיל: מאגר כלי הרכב נותן קוד יצרן, קוד דגם ושנה, ומאגר הדגמים את הנתונים. טנדר מעל 3.5 טון: מאגר נפרד, רק נפח
+const MOT = { cars: '053cea08-09bc-40ec-8f7a-156f0677aff3', models: '142afde2-6228-49f9-8a29-9b6c3a0cbe40', heavy: 'cd3acc5c-03c3-4c89-9c54-d40f93c0d790' };
+let motWhy = '';
+async function motQuery(rid, filters) {
+  const j = JSON.parse(await get(`https://data.gov.il/api/3/action/datastore_search?resource_id=${rid}&filters=${encodeURIComponent(JSON.stringify(filters))}`, 3));
+  if (!j.success) throw new Error('data.gov.il: ' + JSON.stringify(j.error).slice(0, 80));
+  return j.result.records;
+}
+async function mot(plates) {
+  const out = {}, queue = [...plates]; let fails = 0;
+  await Promise.all(Array.from({ length: 6 }, async () => {
+    while (queue.length) {
+      const p = queue.shift();
+      try {
+        const [v] = await motQuery(MOT.cars, { mispar_rechev: Number(p) });
+        if (v) {
+          const ms = await motQuery(MOT.models, { tozeret_cd: v.tozeret_cd, degem_cd: v.degem_cd, shnat_yitzur: v.shnat_yitzur });
+          const m = ms.find(r => r.ramat_gimur === v.ramat_gimur) || ms[0];
+          if (m) out[p] = { hp: Number(m.koah_sus) || 0, cc: Number(m.nefah_manoa) || 0, seats: Number(m.mispar_moshavim) || 0 };
+        } else {
+          const [h] = await motQuery(MOT.heavy, { mispar_rechev: Number(p) });
+          if (h) out[p] = { hp: 0, cc: Number(h.nefach_manoa) || 0, seats: 0 };
+        }
+      } catch (e) { fails++; motWhy = e.message; }
+    }
+  }));
+  if (!Object.keys(out).length) { motWhy = motWhy || 'לא נמצא אף רכב'; return null; }
+  if (fails) motWhy = `${fails} רכבים לא נבדקו (${motWhy})`;
+  return out;
 }
 
 async function collect() {
@@ -195,9 +230,11 @@ async function collect() {
   cars.sort((a, b) => a.plate.localeCompare(b.plate));
   let api = await auto360();
   if (!api && !flag('--direct')) api = await stockFromGithub();
-  writeJson('cars.json', { at: new Date().toISOString(), count: cars.length, cars, apiPlates: api, apiBody: api ? auto360Body : {}, apiWhy: auto360Why });
+  const motData = await mot(cars.map(c => c.plate));
+  writeJson('cars.json', { at: new Date().toISOString(), count: cars.length, cars, apiPlates: api, apiBody: api ? auto360Body : {}, apiInfo: auto360Info, apiWhy: auto360Why,
+    mot: motData, motWhy });
   const bad = cars.filter(c => !c.plate || !c.title);
-  console.log(`auto360: ${api ? api.length + ' רכבים' : 'לא זמין (' + auto360Why + ')'}. נאספו ${cars.length} רכבים. בלי תמונות: ${cars.filter(c => c.noPhotos).length}. לא בפיד: ${cars.filter(c => !c.inFeed).length}. שגיאות פענוח: ${bad.length}`);
+  console.log(`auto360: ${api ? api.length + ' רכבים' : 'לא זמין (' + auto360Why + ')'}. משרד התחבורה: ${motData ? Object.keys(motData).length + ' רכבים' + (motWhy ? ' (' + motWhy + ')' : '') : 'לא זמין (' + motWhy + ')'}. נאספו ${cars.length} רכבים. בלי תמונות: ${cars.filter(c => c.noPhotos).length}. לא בפיד: ${cars.filter(c => !c.inFeed).length}. שגיאות פענוח: ${bad.length}`);
   if (bad.length) die('פענוח נכשל: ' + bad.map(c => c.link).join(' '));
 }
 
