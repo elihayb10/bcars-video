@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // נגזר אוטומטית מ-bcars_ads.js של מכונת המלאי (make_prompts.js). לא לערוך כאן.
-// קריאת האתר ו-auto360, ומשימת סרטון לכל רכב. פקודות: collect [--direct] | stock [file] | video-jobs-all [dir]
+// קריאת האתר ו-auto360, ומשימת סרטון לכל רכב. פקודות: collect [--direct] | stock [file] | video-jobs-all [dir] | sale-jobs-all [dir] [--mode sale|organic]
 'use strict';
 const fs = require('fs');
 const SRC = {
@@ -231,8 +231,10 @@ async function collect() {
   let api = await auto360();
   if (!api && !flag('--direct')) api = await stockFromGithub();
   const motData = await mot(cars.map(c => c.plate));
+  let saleVideos = null, saleVideosWhy = '';
+  try { saleVideos = JSON.parse(await get(NOV.manifest, 2)); } catch (e) { saleVideosWhy = e.message; }
   writeJson('cars.json', { at: new Date().toISOString(), count: cars.length, cars, apiPlates: api, apiBody: api ? auto360Body : {}, apiInfo: auto360Info, apiWhy: auto360Why,
-    mot: motData, motWhy });
+    mot: motData, motWhy, saleVideos, saleVideosWhy });
   const bad = cars.filter(c => !c.plate || !c.title);
   console.log(`auto360: ${api ? api.length + ' רכבים' : 'לא זמין (' + auto360Why + ')'}. משרד התחבורה: ${motData ? Object.keys(motData).length + ' רכבים' + (motWhy ? ' (' + motWhy + ')' : '') : 'לא זמין (' + motWhy + ')'}. נאספו ${cars.length} רכבים. בלי תמונות: ${cars.filter(c => c.noPhotos).length}. לא בפיד: ${cars.filter(c => !c.inFeed).length}. שגיאות פענוח: ${bad.length}`);
   if (bad.length) die('פענוח נכשל: ' + bad.map(c => c.link).join(' '));
@@ -331,7 +333,7 @@ const HOOK_FIX = [
   [/^היברידית:.*/, 'רכב היברידי'], [/^הצ'בק של .*/, "האצ'בק לנסיעה יומיומית"], [/^מרווח לעבודה ולמשפחה/, 'רכב מרווח לעבודה ולמשפחה'],
   [/^רכב דיזל מרווח לעבודה ולמשפחה/, 'רכב דיזל מרווח לעבודה ולמשפחה'], [/^קומפקטי לעיר/, 'רכב קומפקטי לעיר'],
 ];
-const SAY_WORDS = [[/\bSUV\b/g, 'אֶס-יוּ-וִי'], [/ל-7/g, 'לשבעה'], [/ל-8/g, 'לשמונה'], [/ל-6/g, 'לשישה'], [/4X4/gi, 'פוֹר בַּיי פוֹר']];
+const SAY_WORDS = [[/\bSUV\b/g, 'אֶס-יוּ-וִי'], [/ל-7/g, 'לשבעה'], [/ל-8/g, 'לשמונה'], [/ל-6/g, 'לשישה'], [/4X4/gi, 'פוֹר בַּיי פוֹר'], [/FR/g, 'אֶף אָר']];
 const sayWords = (s) => SAY_WORDS.reduce((x, [re, to]) => x.replace(re, to), s);
 function hookOf(c, star) {
   let h = fixStar(c, star).replace(/\.$/, '').split(',')[0].trim();
@@ -380,6 +382,120 @@ function videoJob(c, star) {
   return { plate: c.plate, images: c.images, music: { url, start }, data: { plate: c.plate, name: `${name}${year ? ' ' + year : ''}` }, segs };
 }
 
+// NOVEMBER SALE (1.11–30.11.2026, אליחי 30.10). שתי גרסאות מאותו מנוע, ובשתיהן העברת בעלות במתנה (#109):
+// ממומן (sale): מחיר המבצע בלבד, בלי מחירון. המחיר הוא מחיר הפרסום מ-auto360. במסחרי המחיר לפני מע"מ, ולכן "+ מע״מ".
+// אורגני (organic): מחירון לוי יצחק בלבד (גם במסחרי, כולל מע"מ), בלי מחיר מכירה.
+const SALE_SAY = 'נוֹבֶמְבֶּר סֵייל';
+// המשפט החכם של כל רכב בסרטון (אליחי 30.10: "תמיד חוכמה ביצירת המשפט החכם"): רק מנתוני האתר, בלי סופרלטיבים ובלי מפרט מומצא
+// נכתב 30.10.2026 מנתוני האתר בלבד. רכב חדש בלי משפט: שורת ה-⭐
+const VIDEO_LINES = {
+  '1857312': "סדאן גרמני, לתקציב מצומצם",
+  '3079739': "סדאן מרווח עם מנוע טורבו",
+  '3769780': "סדאן גדול ומרווח, למשפחה ולנסיעות ארוכות",
+  '4231213': "ג'יפ אמריקאי ל-8 נוסעים",
+  '6751539': "ג'יפ משפחתי מרווח, בגימור פרימיום",
+  '7979332': "ג'יפ בריטי ל-7 נוסעים, ק״מ נמוך לשנתון",
+  '8133553': "סטיישן מרווח, לתקציב מצומצם",
+  '9151332': "סדאן אמריקאי גדול, עם מנוע טורבו חזק",
+  '9175139': "ג'יפ משפחתי, ק״מ נמוך לשנתון",
+  '11815203': "ג'יפ משפחתי, מהדור הנוכחי של טוסון",
+  '12338002': "ג'יפ ל-7 נוסעים, למשפחה גדולה",
+  '22639903': "קרוסאובר דיזל, חסכוני בנסיעות ארוכות",
+  '22694403': "ג'יפ משפחתי דיזל, ק״מ נמוך לשנתון",
+  '24697103': "טנדר אמריקאי ל-6 נוסעים, בגימור לאראמי",
+  '24715803': "טנדר דיזל כבד, לעבודה ולגרירה",
+  '24861903': "טנדר אמריקאי עם מנוע קאמינס",
+  '25384201': "סדאן אמריקאי מרווח, למשפחה",
+  '25457002': "קטנה וזריזה, קלה לחניה",
+  '26379601': "סדאן מרווח, לתקציב קטן",
+  '26568403': "קרוסאובר ספורטיבי של קופרה, דגם פורמנטור",
+  '30145402': "קטן וחסכוני, לנהג חדש",
+  '30690001': "האצ'בק יפני קטן, לעיר ולכביש",
+  '36017302': "האצ'בק עם מנוע טורבו חסכוני",
+  '36558402': "מיני יפנית, לנסיעות בעיר",
+  '37341201': "האצ'בק מרווח מבית סקודה",
+  '37397901': "האצ'בק ספורטיבי בגימור FR",
+  '46342302': "רכב עיר קטן מבית יונדאי",
+  '46653902': "סדאן קומפקטי עם תא מטען נדיב",
+  '51509702': "טנדר 4X4 אמריקאי, לעבודה ולשטח",
+  '51844602': "טנדר אמריקאי עם מנוע דורמקס",
+  '51911402': "ג'יפ יוקרתי של קאדילאק",
+  '53263402': "משפחתית מרווחת, ק״מ נמוך לשנתון",
+  '55675102': "ג'יפ משפחתי, בגימור פרסטיז'",
+  '64072001': "סדאן דיזל משפחתי, תא מטען גדול",
+  '71402601': "קרוסאובר משפחתי, גבוה ונוח לכניסה",
+  '77419201': "ג'יפ משפחתי עם מנוע טורבו",
+  '79959401': "קרוסאובר עם הנעה כפולה, של סובארו",
+  '80290202': "ג'יפ יוקרתי קומפקטי של קאדילאק",
+  '82068603': "קרוסאובר חשמלי, נוסעים בלי לתדלק",
+  '83628901': "קרוסאובר קומפקטי, יושבים גבוה בעיר",
+  '84365502': "מרווח לעבודה ולמשפחה, עם דלתות הזזה",
+  '85078802': "קטנה וחסכונית בדלק, של מזדה",
+  '85723001': "רכב עבודה מרווח, דיזל חסכוני",
+  '88867501': "ג'יפ יוקרתי קומפקטי של מרצדס",
+};
+// דגמים שקיימים גם באוטומט וגם בידני (קטנות ומסחריות קלות): רק בהם הגיר נכנס לכותרת
+// "+ מע״מ" רק בטנדרים האמריקאיים (#114). בברלינגו ובדובלו המחיר כולל (אליחי 30.10.2026)
+const PLUS_VAT = /ראם|סילברדו/;
+const BOTH_GEARS = /I10|I20|פיקנטו|ספארק|ספייס סטאר|מזדה 2|איביזה|ראפיד|אקסנט|טיפו|אסטרה|ברלינגו|דובלו/i; // בניקוד, כדי שהקריין יגיד את זה נכון (#96)
+function videoJobSale(c, star, mode, unique) {
+  const { name, year } = splitTitle(c.title);
+  const L = (s) => `<span class="ltr">${s}</span>`;
+  const segs = [];
+  const hook = hookOf(c, star);
+  // פתיח על הקמפיין (כרטיס ניאון, בלי שורת כתובית): "נובמבר סייל בבית הרכב" (אליחי 30.10)
+  segs.push({ beat: 0, intro: true, say: `${SALE_SAY} בבית הרכב!`, show: '' });
+  // גיר רק בכותרת, ורק בדגם שקיים גם באוטומט וגם בידני (אליחי 30.10: "מיותר לרשום אוטומטי")
+  const auto = /אוטומט/.test(c.gear), manual = /ידני/.test(c.gear);
+  const gearT = manual || (auto && BOTH_GEARS.test(c.title)) ? (manual ? 'ידני' : 'אוטומטי') : '';
+  // כל פרט כותרת משלו (אליחי 30.10: "כל כותרת בנפרד"). icon: האייקון המונפש ליד הכותרת
+  // 1. יצרן, דגם ושנה במבצע סוף שנה: "קאדילאק XT4 שנת 2022 במבצע סוף שנה" (אליחי 30.10). גיר רק אם הדגם קיים בשתי הגרסאות
+  const gearSay = gearT ? ', ' + (manual ? 'ידנית' : 'אוטומטית') : '';
+  // שתי שורות גדולות אחת אחרי השנייה, משפט אחד בקריינות
+  segs.push({ beat: 1, icon: 'car', say: `${sayName(name)}${gearSay}${year ? ', ' + heNum(year) : ''},`, show: `${name}${gearT ? ' ' + gearT : ''}${year ? ` שנת ${L(year)}` : ''}` });
+  segs.push({ beat: 1, say: 'במבצע סוף שנה!', show: '<b>במבצע סוף שנה</b>' });
+  // שורה ייחודית לרכב (אליחי 30.10): שורת ה-⭐ של המכונה, שנכתבה מנתוני האתר. בלי המצאה
+  // משפט חכם לרכב (VIDEO_LINES, נכתב מנתוני האתר ומאושר ע"י אליחי). אין משפט: שורת ה-⭐.
+  // "ג'יפ יוקרתי" ולא "SUV יוקרה" (אליחי 30.10: "אני לא אוהב שאומרים SUV")
+  const uq = (VIDEO_LINES[c.plate] || (unique ? fixStar(c, unique) : '')).replace(/\.$/, '').trim()
+    .replace(/\bSUV יוקרה\b/g, "ג'יפ יוקרתי").replace(/\bSUV\b/g, "ג'יפ").replace(/ג'יפ יוקרה(?= |,|$)/g, "ג'יפ יוקרתי");
+  // משפט עם פסיק: שתי שורות גדולות אחת אחרי השנייה, במקום שורה ארוכה וקטנה
+  const uqParts = uq ? uq.split(/,\s*/).filter(Boolean) : [];
+  uqParts.forEach((part, k) => segs.push({ beat: 1, say: `${sayWords(part)}${k < uqParts.length - 1 ? ',' : '!'}`, show: part }));
+  // 2. מנוע וכ"ס: "מנוע 2000 בנזין · 237 כ״ס". הנפח מעוגל (#102), בחשמלי אין נפח
+  const cc = c.cc ? Math.round(c.cc / 100) * 100 : 0, ev = /חשמל/.test(c.fuel) && !/היבריד/.test(c.fuel);
+  // "מנוע 2000 מספק 237 כוחות סוס". מתחת ל-100 כ"ס לא מציינים את הכוח (אליחי 30.10)
+  const hp = c.hp >= 100 ? c.hp : 0;
+  const engShow = [ev ? 'מנוע חשמלי' : cc ? `מנוע ${L(cc)} ${c.fuel || ''}`.trim() : c.fuel, hp ? `${L(hp)} כ״ס` : ''].filter(Boolean);
+  const engHead = ev ? 'מנוע חשמלי' : cc ? `מנוע ${heNum(cc)}` : '';
+  const engSay = engHead && hp ? `${engHead} מספק ${heNum(hp)} כוחות סוס.` : engHead ? `${engHead}${!ev && c.fuel ? ', ' + c.fuel : ''}.` : hp ? `${heNum(hp)} כוחות סוס.` : '';
+  if (engSay) segs.push({ beat: 2, icon: 'engine', say: engSay, show: engShow.join(' · ') });
+  // 3. ק"מ, 4. יד (כמו באתר, יד 3+ מוסתרת, #99)
+  const real = Number(c.hand) + (String(c.hand).startsWith('0') ? 1 : 0);
+  if (c.km) segs.push({ beat: 2, icon: 'km', say: `${heNum(c.km)} קילומטר.`, show: `${L(fmt(c.km))} ק״מ` });
+  const hand = handPart(c).replace(/^ \| /, '');
+  if (hand) segs.push({ beat: 2, icon: 'key', say: real === 1 ? 'יד ראשונה.' : 'יד שנייה.', show: hand });
+  if (testValid(c.test)) segs.push({ beat: 2, opt: 2, icon: 'test', say: '', show: `טסט עד ${L(c.test)}`, hold: 1.3 });
+  if (mode === 'sale') {
+    if (!c.salePrice) throw new Error(`${c.plate}: אין מחיר מבצע`);
+    const plusVat = PLUS_VAT.test(c.title), vat = plusVat ? ' פלוס מע"מ' : '', vatShow = plusVat ? ' <small>+ מע״מ</small>' : '';
+    segs.push({ beat: 3, price: true, say: `במחיר מבצע: ${heMoney(c.salePrice)} שקל${vat}!`, show: `מחיר NOVEMBER SALE|${L(fmt(c.salePrice) + ' ₪')}${vatShow}` }); // שתי שורות: מה המחיר | המספר
+  } else if (c.price) {
+    segs.push({ beat: 3, price: true, say: `מחירון לוי יצחק: ${heMoney(c.price)} שקל.`, show: `מחירון לוי יצחק|${L(fmt(c.price) + ' ₪')}` });
+    // מחיר המכירה במסחרי לפני מע"מ, והמחירון כולל: משווים באותו בסיס
+    if (c.salePrice && c.salePrice * (PLUS_VAT.test(c.title) ? 1.18 : 1) < c.price) segs.push({ beat: 3, say: 'ואצלנו? מתחת למחירון.', show: 'אצלנו <b>מתחת למחירון</b>' });
+  }
+  // ממומן: המתנה נאמרת על כרטיס הסיום (שם היא כתובה בגדול), כדי שהסרטון ייכנס ב-20 שניות. הכפתור והחץ הם ההנעה לפעולה
+  // בשתי הגרסאות המתנה נאמרת על כרטיס הסיום, ושם כתוב גם שהיא של הקמפיין ולא של הרכב
+  segs.push({ beat: 5, say: `וּבְ${SALE_SAY}: העברת בעלות במתנה!`, show: '' });
+  // אורגני (בלי מחיר מבצע): ההזמנה נאמרת בקול בלבד, ועל המסך רק מספר הוואטסאפ
+  if (mode !== 'sale') segs.push({ beat: 5, say: `רוצים לדעת את מחיר המבצע של ${SALE_SAY}, או לקבל הצעת טרייד-אין? שלחו לנו הודעה!`, show: '' });
+  const [url, start] = VIDEO_MUSIC[Number(c.plate) % VIDEO_MUSIC.length];
+  // כל התמונות של הרכב בסדר של האתר (10 + הנוספות), והסרטון כולו עד 20 שניות (אליחי 30.10)
+  // קריין נלהב יותר (אליחי 30.10): פחות יציבות, יותר סגנון. בלי האצה (#96)
+  return { plate: c.plate, mode, maxSec: 25, voice: { stability: 0.3, similarity_boost: 0.8, style: 0.65, use_speaker_boost: true }, images: [...c.images, ...(c.extra || [])], music: { url, start }, data: { plate: c.plate, mode, name: `${name}${year ? ' ' + year : ''}` }, segs };
+}
+
 // רשימת המלאי לפרסום בגיטהאב: מספרי רישוי וסוג מרכב בלבד. בלי מחירים
 function cmdStock(file) {
   const CJ = readJson('cars.json');
@@ -400,6 +516,25 @@ function cmdVideoJobsAll(dir = 'video-jobs') {
   fs.writeFileSync(`${dir}/_list.json`, JSON.stringify(out));
   console.log(`video-jobs-all: ${out.length} רכבים`);
 }
+// NOVEMBER SALE: חתימה של משימת הסרטון. אותו חישוב בצינור בגיטהאב ובמכונה, כך שהמכונה יודעת שהסרטון במאגר תואם לנתונים של היום (מחיר, ק"מ, תמונות)
+const jobSig = (job) => require('crypto').createHash('sha1').update(JSON.stringify(job)).digest('hex').slice(0, 12);
+// מחיר הפרסום נקבע רק כשהוא שונה מהמחירון. כל עוד הם זהים, אליחי עוד לא החליט בכמה לפרסם (30.10.2026): אין סרטון ואין מודעה
+const priceSet = (c) => !!c.salePrice && c.salePrice !== c.price;
+const saleJob = (c, mode) => videoJobSale(c, '', mode, STARS[c.plate]);
+// משימת סרטון סייל לכל רכב במלאי. ממומן: רק רכב עם מחיר מבצע בפיד. רכב בלי 10 תמונות, או שלא במלאי auto360, מדולג
+function cmdSaleJobsAll(dir, mode = 'sale') {
+  fs.mkdirSync(dir, { recursive: true });
+  const CJ = readJson('cars.json'); const api = Array.isArray(CJ.apiPlates) ? new Set(CJ.apiPlates) : null;
+  const out = [];
+  for (const c of CJ.cars) {
+    if (c.noPhotos || c.images.length < 10 || (api && !api.has(c.plate)) || (mode === 'sale' && !priceSet(c))) continue;
+    const job = saleJob(c, mode);
+    writeJson(`${dir}/${c.plate}.json`, job);
+    out.push({ plate: c.plate, sig: jobSig(job), name: job.data.name, ageDays: c.ageDays });
+  }
+  fs.writeFileSync(`${dir}/_list.json`, JSON.stringify(out));
+  console.log(`sale-jobs-all (${mode}): ${out.length} רכבים`);
+}
 (async () => {
   const BOOL = ['--direct'];
   const [cmd, ...rest] = process.argv.slice(2).filter((x, i, arr) => !(x.startsWith('--') || (i > 0 && arr[i - 1].startsWith('--') && !BOOL.includes(arr[i - 1]))));
@@ -407,6 +542,7 @@ function cmdVideoJobsAll(dir = 'video-jobs') {
     if (cmd === 'collect') await collect();
     else if (cmd === 'stock') cmdStock(rest[0]);
     else if (cmd === 'video-jobs-all') cmdVideoJobsAll(rest[0]);
-    else die('פקודה לא מוכרת. collect | stock | video-jobs-all');
+    else if (cmd === 'sale-jobs-all') cmdSaleJobsAll(rest[0] || 'sale-jobs', arg('--mode') || 'sale');
+    else die('פקודה לא מוכרת. collect | stock | video-jobs-all | sale-jobs-all');
   } catch (e) { die(e.message); }
 })();

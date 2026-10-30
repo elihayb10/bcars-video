@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>NOVEMBER SALE – בית הרכב</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Heebo"; src: url("assets/fonts/Heebo.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      @font-face { font-family: "Karantina"; src: url("assets/fonts/Karantina-Bold.ttf") format("truetype"); font-weight: 700; font-display: block; }
+      /* הניאון של טיזר NOVEMBER SALE (29.10): ירוק מנטה, ורוד, מסגרת זהב, רקע כהה */
+      :root { --night: #07061a; --mint: #5dffb0; --pink: #ff3fa4; --gold: #fcb216; --gold2: #ffc83d; --ink: #fffdf7; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--night); font-family: "Heebo", sans-serif; color: var(--ink); }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: var(--night); }
+      .full { position: absolute; inset: 0; }
+      .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+
+      /* הסצנה: רקע שקט, כדי שהעין תלך לרכב. רק רצפת רשת עמומה וקו אופק דק, בסגנון הטיזר */
+      #scene { position: absolute; inset: 0; overflow: hidden; background: radial-gradient(ellipse 120% 55% at 50% 50%, #1d1045 0%, #0d0828 50%, #07061a 85%); }
+      #floor { position: absolute; left: -540px; width: 2160px; top: 1242px; height: 1300px; transform-origin: 50% 0; transform: perspective(520px) rotateX(64deg); opacity: 0.32;
+        background-image: linear-gradient(rgba(255,63,164,0.9) 3px, transparent 3px), linear-gradient(90deg, rgba(93,255,176,0.75) 3px, transparent 3px); background-size: 120px 120px; background-position: 0 0; }
+      #floorFade { position: absolute; left: 0; right: 0; top: 1242px; height: 570px; background: linear-gradient(180deg, rgba(7,6,26,0) 0%, rgba(7,6,26,0.4) 55%, rgba(7,6,26,0.85) 100%); }
+      /* הרכב במרכז: התמונה המלאה מהאתר לכל רוחב המסך (חיתוך דק בצדדים בלבד, בלי AI, #3), עם השתקפות על הרצפה */
+      #cardWrap { position: absolute; left: 0; top: 430px; width: 1080px; height: 810px; } /* כל הרכב, כולל הגלגלים, מעל 1248: שם מטא מכסה בטקסט ובכפתור */
+      .photo { position: absolute; inset: 0; overflow: hidden; background: #0b0a24;
+        box-shadow: 0 -2px 0 rgba(255,63,164,0.9), 0 2px 0 rgba(93,255,176,0.9), 0 30px 60px rgba(0,0,0,0.55);
+        -webkit-box-reflect: below 2px linear-gradient(transparent 70%, rgba(255,255,255,0.22)); }
+      .photo img { position: absolute; left: 0; top: 0; width: 1080px; height: 810px; object-fit: cover; opacity: 0; transform-origin: 50% 58%; }
+      .photo .fl { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 40; }
+      .photo img.hero { z-index: 30; }
+      /* ברק אור שעובר על הרכב במעבר בין תמונות */
+      .photo .sweep { position: absolute; top: -10%; bottom: -10%; width: 260px; left: -400px; z-index: 41; transform: skewX(-20deg); background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.38), rgba(255,255,255,0)); }
+      #ring { position: absolute; z-index: 45; left: 540px; top: 352px; width: 200px; height: 200px; margin: -100px 0 0 -100px; border-radius: 50%; border: 6px solid #ff3fa4; box-shadow: 0 0 24px #ff3fa4; opacity: 0; }
+
+      /* תג NOVEMBER SALE קטן בפינת התמונה: הדבר היחיד שנשאר כל הזמן */
+      /* מתחת לתמונה, לא עליה (אליחי: "נובמבר סייל מתחת לתמונה... להוריד עומס") */
+      #badge { position: absolute; z-index: 50; top: 1268px; left: 50%; display: flex; gap: 14px; align-items: baseline; direction: ltr; padding: 4px 26px 8px; border: 3px solid var(--gold); border-radius: 14px;
+        background: rgba(7,6,26,0.7); box-shadow: 0 0 14px rgba(252,178,22,0.55); white-space: nowrap; }
+      .nv, .sl { font-weight: 900; font-size: 40px; letter-spacing: 3px; }
+      .nv { color: #eafff4; text-shadow: 0 0 6px var(--mint), 0 0 14px var(--mint); }
+      .sl { color: #fff0f8; text-shadow: 0 0 6px var(--pink), 0 0 14px var(--pink); }
+
+      /* שורת טקסט אחת בכל פעם, בתחום הבטוח (y 290-460), באמצע בדיוק. סגנון poster: קרנטינה, לבן, קו מתאר דק וצל (23.10) */
+      .cap { position: absolute; z-index: 50; top: 288px; left: 65px; right: 65px; height: 134px; display: flex; align-items: center; justify-content: center; direction: rtl; opacity: 0;
+        font-family: "Karantina", "Heebo", sans-serif; font-weight: 700; line-height: 0.95; color: #fff; white-space: nowrap;
+        -webkit-text-stroke: 4px #000; paint-order: stroke fill; text-shadow: 0 7px 0 rgba(0,0,0,0.6), 0 14px 30px rgba(0,0,0,0.6); }
+      .cap .ci { flex-shrink: 0; position: relative; } /* כדי שהמדידה תראה את הרוחב האמיתי ולא תיחתך בשוליים */
+      .cap .row { position: relative; display: flex; align-items: center; gap: 26px; flex-shrink: 0; }
+      /* אייקון ניאון ליד כל כותרת: מצטייר בקו, ואז פועם */
+      .cap .ic { width: 0.78em; height: 0.78em; flex-shrink: 0; overflow: visible; filter: drop-shadow(0 0 8px rgba(255,63,164,0.9)); }
+      .cap .ic * { fill: none; stroke: #ff7cc4; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+      /* חשיפות של מושן גרפיקס: פס זהב שחוצה, מסגרת ניאון שמצטיירת, קו ניאון מתחת */
+      .cap .bar { position: absolute; top: 8%; bottom: 8%; left: -3%; right: -3%; background: linear-gradient(90deg, #ff3fa4, #fcb216); transform: scaleX(0); transform-origin: 100% 50%; z-index: 2; }
+      .cap .box { position: absolute; inset: -14px -26px; overflow: visible; }
+      .cap .box rect { fill: none; stroke: #5dffb0; stroke-width: 4; stroke-dasharray: 1; stroke-dashoffset: 1; filter: drop-shadow(0 0 8px #5dffb0); }
+      .cap .ul { position: absolute; left: 0; right: 0; bottom: -10px; height: 6px; border-radius: 6px; background: linear-gradient(90deg, #5dffb0, #ff3fa4); box-shadow: 0 0 14px #ff3fa4; transform: scaleX(0); transform-origin: 100% 50%; }
+      .cap b { display: inline-block; margin: 0 0.14em; color: var(--gold2); font-weight: 700; }
+      /* המחיר: אותה שורה, בתוך גלולת ניאון */
+      .cap.price .ci { position: relative; overflow: hidden; display: flex; align-items: center; gap: 22px; padding: 4px 36px 10px; border-radius: 26px; border: 5px solid var(--gold); background: rgba(7,6,26,0.9);
+        box-shadow: 0 0 22px var(--pink), 0 0 50px rgba(255,63,164,0.55), inset 0 0 18px rgba(255,63,164,0.35); -webkit-text-stroke: 0; }
+      .cap.price .lbl, .cap.price .num { flex-shrink: 0; white-space: nowrap; }
+      .cap.price .lbl { font-size: 0.42em; color: #fff; text-shadow: 0 0 10px rgba(255,63,164,0.9); }
+      .cap.price .num { color: #fff; text-shadow: 0 0 8px var(--gold2), 0 0 26px var(--gold); }
+      .cap.price .num small { font-size: 0.45em; color: var(--gold2); }
+      .cap.price .shine { position: absolute; top: 0; bottom: 0; width: 140px; left: -180px; background: linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); transform: skewX(-18deg); }
+
+      /* פתיח הקמפיין: כרטיס ניאון כמו בטיזר, מעל רצפת הרשת */
+      #intro { position: absolute; left: 0; right: 0; top: 430px; height: 810px; z-index: 60; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 14px; padding-top: 40px; direction: rtl;
+        background: linear-gradient(180deg, rgba(7,6,26,0.82) 0%, rgba(7,6,26,0.55) 38%, rgba(7,6,26,0) 62%); }
+      #introBox { display: flex; flex-direction: column; align-items: center; padding: 18px 60px 26px; border: 6px solid var(--gold); border-radius: 30px; background: rgba(7,6,26,0.78);
+        box-shadow: 0 0 26px rgba(252,178,22,0.75), inset 0 0 22px rgba(252,178,22,0.35); direction: ltr; }
+      #introBox .nv { font-size: 74px; letter-spacing: 6px; line-height: 1.05; }
+      #introBox .sl { font-size: 136px; letter-spacing: 12px; line-height: 0.95; }
+      #introRing { position: absolute; z-index: 61; left: 540px; top: 640px; width: 220px; height: 220px; margin: -110px 0 0 -110px; border-radius: 50%; border: 8px solid #fff; box-shadow: 0 0 30px #ff3fa4, 0 0 60px #5dffb0; opacity: 0; }
+      #introFlash { position: absolute; inset: 0; z-index: 59; background: radial-gradient(circle at 50% 33%, rgba(255,255,255,0.95), rgba(255,63,164,0.4) 35%, rgba(255,63,164,0) 70%); opacity: 0; }
+      #introAt { font-family: "Karantina", "Heebo", sans-serif; font-weight: 700; font-size: 96px; line-height: 0.95; color: #fff; -webkit-text-stroke: 4px #000; paint-order: stroke fill; text-shadow: 0 7px 0 rgba(0,0,0,0.6), 0 14px 30px rgba(0,0,0,0.6); }
+
+      /* כרטיס הסיום */
+      #end { opacity: 0; background: radial-gradient(ellipse 80% 50% at 50% 40%, rgba(255,63,164,0.16), rgba(7,6,26,0) 70%), var(--night); }
+      #endCol { position: absolute; top: 270px; left: 30px; right: 30px; display: flex; flex-direction: column; align-items: center; gap: 12px; direction: rtl; }
+      #endLogo img { width: 110px; display: block; }
+      #endBadge { display: flex; gap: 16px; direction: ltr; padding: 4px 26px 8px; border: 4px solid var(--gold); border-radius: 16px; box-shadow: 0 0 16px rgba(252,178,22,0.6); }
+      #endBadge .nv, #endBadge .sl { font-size: 40px; }
+      #endAsk { font-family: "Karantina", "Heebo", sans-serif; font-weight: 700; font-size: 80px; line-height: 0.95; color: #fff; -webkit-text-stroke: 4px #000; paint-order: stroke fill; white-space: nowrap; }
+      #endAsk b { color: var(--gold2); }
+      /* המתנה שייכת לקמפיין ולא לרכב: שורה שאומרת את זה במפורש (אליחי 30.10) */
+      #endSub { font-size: 42px; font-weight: 800; color: #fff; white-space: nowrap; margin-top: -6px; text-shadow: 0 0 10px rgba(255,63,164,0.8); }
+      #endPre { display: flex; align-items: center; gap: 10px; font-size: 40px; font-weight: 900; color: var(--gold2); white-space: nowrap; text-shadow: 0 0 12px rgba(252,178,22,0.7); }
+      #endPre svg { width: 40px; height: 40px; }
+      #endNote b { color: var(--gold2); }
+      #endNote { font-size: 34px; font-weight: 700; color: rgba(255,253,247,0.92); white-space: nowrap; padding: 6px 22px 8px; border: 2px solid rgba(255,63,164,0.8); border-radius: 999px; }
+      #endWa { display: flex; align-items: center; gap: 16px; background: var(--gold); color: #1a0a24; font-weight: 900; font-size: 58px; line-height: 1; padding: 12px 40px 16px; border-radius: 999px; direction: ltr; box-shadow: 0 18px 44px rgba(0,0,0,0.45), 0 0 22px rgba(252,178,22,0.5); }
+      #endWa svg { width: 52px; height: 52px; }
+      #endCar { width: 860px; height: 516px; border-radius: 28px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 0 4px rgba(255,63,164,0.5), 0 0 30px rgba(255,63,164,0.35); }
+      #endCar img { width: 860px; height: 516px; object-fit: cover; display: block; }
+      #endHint { display: flex; align-items: center; gap: 14px; font-size: 36px; font-weight: 700; color: rgba(255,253,247,0.88); }
+      #endHint svg { width: 34px; height: 34px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="18">
+      <div id="main" class="clip full" data-start="0" data-duration="18" data-track-index="1"><div id="stage" class="full"></div></div>
+      <div id="endClip" class="clip full" data-start="0" data-duration="18" data-track-index="2">
+        <div id="end" class="full">
+          <div id="endCol">
+            <div id="endLogo"><img src="assets/brand/logo-white.png" alt="" /></div>
+            <div id="endBadge"><span class="nv">NOVEMBER</span><span class="sl">SALE</span></div>
+            <div id="endPre"></div>
+            <div id="endAsk"></div>
+            <div id="endSub"></div>
+            <div id="endNote"></div>
+            <div id="endCar"><img id="endCarImg" alt="" /></div>
+            <div id="endWa"><svg viewBox="0 0 32 32"><path fill="#1a0a24" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 9.9 5.1 16 5.1S27 9.9 27 15.8 22.1 26.4 16 26.4zm6-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>04-640-1666</span></div>
+            <div id="endHint"><span>לחצו על הכפתור למטה</span><svg viewBox="0 0 24 24"><path fill="#ffc83d" d="M12 21l-8-8h5V3h6v10h5z"/></svg></div>
+          </div>
+        </div>
+      </div>
+      <audio id="mix" src="build/mix.wav" data-start="0" data-duration="18" data-track-index="9"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      // DATA: הרכב (מהאתר דרך מכונת המלאי) ו-mode: sale (ממומן) / organic (אורגני). TL: ציר הזמן ש-render.mjs חישב מהקריינות
+      const D = /*DATA*/{"plate":"80290202","mode":"sale","name":"קאדילאק XT4 2022"}/*DATA*/;
+      const TL = /*TL*/{"total":18,"end":15,"segs":[],"photos":[]}/*TL*/;
+      const $ = (s, r = document) => r.querySelector(s);
+      const H = (html) => { const t = document.createElement("template"); t.innerHTML = html.trim(); return t.content.firstChild; };
+      const GIFT_GOLD = `<svg viewBox="0 0 24 24"><path fill="none" stroke="#ffc83d" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M4 11h16v9H4zM3 8h18v3H3zM12 8v12M12 8c-1.5-4-6-3.5-4.5-.5M12 8c1.5-4 6-3.5 4.5-.5"/></svg>`;
+      const src = (n) => `assets/cars/${D.plate}-${String(n).padStart(2, "0")}.jpg`;
+
+      // הכניסות (מושן גרפיקס): פס זהב שחושף, טקסט שעולה מתוך מסכה, מסגרת ניאון שמצטיירת, החלקה עם קו ניאון, זום מגדול, היפוך
+      let tl;
+      const ENTER = [
+        (el, ci, t) => { const bar = H(`<i class="bar"></i>`); ci.parentNode.appendChild(bar); tl.set(el, { opacity: 1 }, t);
+          tl.fromTo(ci.parentNode.children, { opacity: 0 }, { opacity: 1, duration: 0.01, immediateRender: false }, t + 0.2); tl.set(bar, { opacity: 1 }, t);
+          tl.fromTo(bar, { scaleX: 0, transformOrigin: "100% 50%" }, { scaleX: 1, duration: 0.2, ease: "power3.in", immediateRender: false }, t);
+          tl.to(bar, { scaleX: 0, transformOrigin: "0% 50%", duration: 0.24, ease: "power3.out" }, t + 0.2); },
+        (el, ci, t) => { tl.set(el, { opacity: 1 }, t); tl.fromTo(ci, { yPercent: 70, clipPath: "inset(0% -5% 100% -5%)" }, { yPercent: 0, clipPath: "inset(-20% -5% -20% -5%)", duration: 0.36, ease: "power3.out", immediateRender: false }, t); },
+        (el, ci, t) => { const box = H(`<svg class="box" preserveAspectRatio="none" viewBox="0 0 100 100"><rect x="1" y="1" width="98" height="98" rx="8" pathLength="1" vector-effect="non-scaling-stroke"/></svg>`); ci.appendChild(box);
+          tl.set(el, { opacity: 1 }, t); tl.fromTo(box.firstChild, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.4, ease: "power2.inOut", immediateRender: false }, t);
+          tl.fromTo(ci, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, t + 0.18);
+          tl.to(box, { opacity: 0, duration: 0.3 }, t + 0.9); },
+        (el, ci, t) => { const ul = H(`<i class="ul"></i>`); ci.appendChild(ul);
+          tl.fromTo(el, { opacity: 0, x: 260 }, { opacity: 1, x: 0, duration: 0.3, ease: "power3.out", immediateRender: false }, t);
+          tl.fromTo(ul, { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.out", immediateRender: false }, t + 0.2); },
+        (el, ci, t) => tl.fromTo(el, { opacity: 0, scale: 2.2 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out", immediateRender: false }, t),
+        (el, ci, t) => tl.fromTo(el, { opacity: 0, rotateX: -90, transformPerspective: 700 }, { opacity: 1, rotateX: 0, duration: 0.34, ease: "back.out(1.8)", immediateRender: false }, t),
+      ];
+      // אייקונים בקו (24x24): רכב, מנוע, מד מהירות, מפתח, טסט, מתנה
+      const ICON = {
+        car: '<path pathLength="1" d="M3 15l2.2-5.5A2 2 0 0 1 7 8h10a2 2 0 0 1 1.8 1.5L21 15v3a1 1 0 0 1-1 1h-1.5M3 15v3a1 1 0 0 0 1 1h1.5M3 15h18M8.5 19h7"/><circle pathLength="1" cx="7" cy="19" r="1.8"/><circle pathLength="1" cx="17" cy="19" r="1.8"/>',
+        engine: '<path pathLength="1" d="M5 9h3l2-2h4l2 2h2v3h2V10h1v7h-1v-2h-2v3h-3l-2 2H9l-1.5-2H5zM9 4h6M12 4v3"/>',
+        km: '<path pathLength="1" d="M4 17a8 8 0 1 1 16 0"/><path pathLength="1" class="needle" d="M12 17l4.5-5"/><circle pathLength="1" cx="12" cy="17" r="1.4"/>',
+        key: '<circle pathLength="1" cx="8" cy="8" r="4"/><path pathLength="1" d="M11 11l9 9M16.5 16.5l2.5-2.5M14 19l2.5-2.5"/>',
+        test: '<path pathLength="1" d="M4 6h16v14H4zM4 10h16M8 3v5M16 3v5M9 15l2 2 4-4"/>',
+        gift: '<path pathLength="1" d="M4 11h16v9H4zM3 8h18v3H3zM12 8v12M12 8c-1.5-4-6-3.5-4.5-.5M12 8c1.5-4 6-3.5 4.5-.5"/>',
+      };
+
+      // הגודל של כל שורה נמדד בגופן האמיתי, ולכן הבנייה מחכה לגופנים
+      function build() {
+        tl = gsap.timeline({ paused: true });
+        const S = $("#stage");
+
+        // הסצנה: רצפה עמומה שזזה לאט. בלי פסי אור, בלי חלקיקים (אליחי: "פחות עמוס מבחינת גרפיקה")
+        const sc = H(`<div id="scene"><div id="floor"></div><div id="floorFade"></div></div>`); S.appendChild(sc);
+        tl.fromTo("#floor", { backgroundPosition: "0px 0px" }, { backgroundPosition: `0px ${Math.round(TL.end * 90)}px`, duration: TL.end, ease: "none", immediateRender: true }, 0);
+
+        // 10 התמונות בסדר של האתר, הרכב הוא הדבר הגדול על המסך. מצלמה איטית שמתקרבת לכל תמונה, ומעבר נקי ביניהן
+        const IE = TL.intro ? TL.intro.e : 0;
+        const wrap = H(`<div id="cardWrap"></div>`); S.appendChild(wrap);
+        const ph = H(`<div class="photo">${Array.from({ length: TL.photos.length }, (_, n) => `<img src="${src(n + 1)}" alt="">`).join("")}<div class="fl"></div><i class="sweep"></i></div>`); wrap.appendChild(ph);
+        S.appendChild(H(`<div id="ring"></div>`));
+        const imgs = [...ph.querySelectorAll("img:not(.hero)")], fl = $(".fl", ph), hero = $(".hero", ph);
+        TL.photos.forEach((p, k) => {
+          const im = imgs[p.n - 1], d = p.e - p.s + 0.45, kind = k === 0 ? -1 : (k - 1) % 3;
+          tl.set(im, { opacity: 1, zIndex: k + 1, xPercent: 0 }, p.s);
+          if (k === 0) tl.fromTo(im, { scale: 1.55, x: 0 }, { scale: 1.0, x: 0, duration: 1.1, ease: "power3.out", immediateRender: true }, p.s); // חשיפה: מקרוב לרכב המלא
+          tl.fromTo(im, { scale: 1.0, x: k % 2 ? 14 : -14 }, { scale: 1.08, x: k % 2 ? -14 : 14, duration: k === 0 ? d - 1.1 : d, ease: "none", immediateRender: false }, k === 0 ? p.s + 1.1 : p.s);
+          if (kind === 0) tl.fromTo(ph, { scale: 1.06 }, { scale: 1, duration: 0.28, ease: "power2.out", immediateRender: false }, p.s); // חיתוך נקי עם זום קצר (בלי "חשיפה כפולה")
+          if (kind === 1) tl.fromTo(im, { xPercent: k % 2 ? 100 : -100 }, { xPercent: 0, duration: 0.38, ease: "power3.out", immediateRender: false }, p.s); // החלקה
+          if (kind === 2) tl.fromTo($(".sweep", ph), { left: -400 }, { left: 1300, duration: 0.7, ease: "power2.inOut", immediateRender: false }, p.s - 0.15); // ברק אור
+          tl.set(im, { opacity: 0 }, p.e + 0.45);
+        });
+
+        if (TL.intro) {
+          const it = H(`<div id="intro"><div id="introBox"><span class="nv">NOVEMBER</span><span class="sl">SALE</span></div><div id="introAt">בבית הרכב</div></div>`); S.appendChild(it);
+          S.appendChild(H(`<div id="introFlash"></div>`)); S.appendChild(H(`<div id="introRing"></div>`));
+          // המסגרת נדלקת, NOVEMBER נכנס משמאל ו-SALE מימין, והם "נוחתים" יחד
+          tl.fromTo("#introBox", { borderColor: "rgba(252,178,22,0)", boxShadow: "0 0 0 rgba(252,178,22,0)", background: "rgba(7,6,26,0)" }, { borderColor: "#fcb216", boxShadow: "0 0 26px rgba(252,178,22,0.75), inset 0 0 22px rgba(252,178,22,0.35)", background: "rgba(7,6,26,0.78)", duration: 0.12, immediateRender: true }, 0.3);
+          tl.fromTo("#introBox .nv", { x: -900, opacity: 1 }, { x: 0, duration: 0.3, ease: "power4.in", immediateRender: true }, 0);
+          tl.fromTo("#introBox .sl", { x: 900, opacity: 1 }, { x: 0, duration: 0.3, ease: "power4.in", immediateRender: true }, 0);
+          // ההתנגשות: הבזק, גל הדף ורעידה של כל המסך
+          tl.fromTo("#introFlash", { opacity: 0.9 }, { opacity: 0, duration: 0.35, ease: "power2.out", immediateRender: false }, 0.3);
+          tl.fromTo("#introRing", { opacity: 1, scale: 0.3 }, { opacity: 0, scale: 7, duration: 0.6, ease: "power2.out", immediateRender: false }, 0.3);
+          tl.fromTo("#introBox", { scale: 1.25 }, { scale: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 0.3);
+          tl.fromTo("#stage", { x: 0, y: 0 }, { x: 14, y: -10, duration: 0.04, repeat: 5, yoyo: true, ease: "none", immediateRender: false }, 0.3);
+          tl.set("#stage", { x: 0, y: 0 }, 0.55);
+          tl.fromTo("#introBox .sl", { opacity: 0.35 }, { opacity: 1, duration: 0.05, repeat: 4, yoyo: true, ease: "none", immediateRender: false }, 0.6);
+          tl.fromTo("#introAt", { opacity: 0, y: -50, scale: 1.4 }, { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: "back.out(2.5)", immediateRender: true }, 0.55);
+          // יציאה: התג "נוחת" למקום שלו מתחת לתמונה
+          tl.to("#introBox", { y: 760, scale: 0.42, duration: 0.38, ease: "power3.in" }, IE - 0.38);
+          tl.to(["#intro", "#introAt"], { opacity: 0, duration: 0.3, ease: "power2.in" }, IE - 0.3);
+        }
+        // התג הקטן: נדלק כמו ניאון בפתיחה
+        const badge = H(`<div id="badge"><span class="nv">NOVEMBER</span><span class="sl">SALE</span></div>`); S.appendChild(badge);
+        tl.set(badge, { xPercent: -50 }, 0);
+        if (IE) tl.fromTo(badge, { opacity: 0 }, { opacity: 1, duration: 0.25, immediateRender: true }, IE);
+        tl.fromTo($(".sl", badge), { opacity: 0.3 }, { opacity: 1, duration: 0.07, repeat: 4, yoyo: true, ease: "none", immediateRender: true }, 0.1);
+
+        // שורה אחת בכל פעם, בדיוק כשהקריין אומר אותה. נכנסת בבת אחת בקפיצה קטנה, והמילה בזהב פועמת
+        TL.segs.forEach((g, i) => {
+          const html = g.price ? `<span class="lbl">${g.show.split("|")[0]}</span><span class="num">${g.show.split("|")[1]}</span><i class="shine"></i>` : g.show;
+          const ic = g.icon && ICON[g.icon] ? `<svg class="ic" viewBox="0 0 24 24">${ICON[g.icon]}</svg>` : "";
+          const el = H(`<div class="cap${g.price ? " price" : ""}"><span class="row">${ic}<span class="ci">${html}</span></span></div>`); S.appendChild(el);
+          const ci = $(".ci", el), row = $(".row", el); let size = g.price ? 124 : 118; el.style.fontSize = size + "px";
+          while (Math.max(row.getBoundingClientRect().width, row.scrollWidth) > 950 && size > 64) { size -= 4; el.style.fontSize = size + "px"; }
+          const t1 = i === 0 ? 0 : g.s;
+          if (ic) { // האייקון מצטייר, ואז פועם. במד המהירות המחוג עולה
+            const parts = [...$(".ic", el).children];
+            tl.fromTo(parts, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.45, stagger: 0.05, ease: "power2.out", immediateRender: false }, t1 + 0.05);
+            tl.fromTo($(".ic", el), { scale: 1 }, { scale: 1.18, duration: 0.15, yoyo: true, repeat: 1, ease: "sine.inOut", immediateRender: false }, t1 + 0.5);
+            const nd = $(".needle", el); if (nd) tl.fromTo(nd, { rotate: -120, svgOrigin: "12 17" }, { rotate: 0, svgOrigin: "12 17", duration: 0.7, ease: "back.out(1.6)", immediateRender: false }, t1 + 0.2);
+          }
+          const first = i === 0 && g.s < 0.2, t0 = first ? 0 : g.s;
+          if (g.price) {
+            tl.fromTo(el, { opacity: 0, scale: 0.3, rotate: -6 }, { opacity: 1, scale: 1, rotate: 0, duration: 0.42, ease: "back.out(2.4)", immediateRender: false }, t0);
+            tl.fromTo(fl, { opacity: 0.5 }, { opacity: 0, duration: 0.25, immediateRender: false }, t0);
+            tl.fromTo("#ring", { opacity: 1, scale: 0.4 }, { opacity: 0, scale: 6, duration: 0.7, ease: "power2.out", immediateRender: false }, t0);
+            // ברק אור על התמונה שרצה באותו רגע. תמונה לא חוזרת פעמיים (אליחי 30.10), חוץ מזו שבכרטיס הסיום
+            tl.fromTo($(".sweep", ph), { left: -400 }, { left: 1300, duration: 0.8, ease: "power2.inOut", immediateRender: false }, t0 + 0.5);
+            tl.fromTo($(".shine", el), { left: -180 }, { left: 1100, duration: 0.7, ease: "power2.inOut", immediateRender: false }, t0 + 0.45);
+          } else {
+            // כל שורה נכנסת בהנפשה אחרת (אליחי: "בכל פעם בהנפשה ייחודית"). הראשונה כבר על המסך בפריים הראשון
+            if (first) tl.set(el, { opacity: 1 }, 0);
+            else ENTER[(i + Number(D.plate)) % ENTER.length](el, ci, t0);
+            const gold = [...ci.querySelectorAll("b")];
+            if (gold.length) tl.fromTo(gold, { scale: 1 }, { scale: 1.14, duration: 0.16, yoyo: true, repeat: 1, ease: "sine.inOut", immediateRender: false }, t0 + 0.3);
+          }
+          tl.to(el, { opacity: 0, y: -14, duration: 0.1 }, g.e - 0.1);
+        });
+
+        // כרטיס הסיום: ממומן = המתנה ועד מתי, אורגני = בירור מחיר
+        $("#endAsk").innerHTML = "העברת בעלות <b>במתנה</b>"; // גם באורגני: המתנה של הקמפיין
+        $("#endSub").textContent = "בכל רכישת רכב";
+        $("#endPre").innerHTML = `${GIFT_GOLD}<span>המתנה של נובמבר סייל</span>`;
+        // ממומן: תוקף מחיר המבצע. אורגני (מחירון בלבד): הזמנה לבירור מחיר
+        $("#endNote").textContent = "מחיר המבצע בתוקף לחודש נובמבר בלבד";
+        if (D.mode !== "sale") { // אורגני: אין כפתור של מודעה, וההזמנה לבירור מחיר נאמרת בקריינות ולא כתובה (אליחי: "שלא יהיה טקסט עמוס")
+          $("#endHint").remove(); $("#endNote").remove(); }
+        let sz = 80; const ea = $("#endAsk"); while (ea.getBoundingClientRect().width > 990 && sz > 50) { sz -= 2; ea.style.fontSize = sz + "px"; }
+        $("#endCarImg").src = src(1);
+        tl.set("#stage", { opacity: 1 }, 0);
+        tl.to("#stage", { opacity: 0, duration: 0.2 }, TL.end);
+        tl.fromTo("#end", { opacity: 0 }, { opacity: 1, duration: 0.2 }, TL.end);
+        tl.fromTo("#endLogo", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, TL.end + 0.05);
+        tl.fromTo("#endBadge", { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, TL.end + 0.12);
+        if ($("#endPre")) tl.fromTo("#endPre", { opacity: 0, y: -12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power2.out" }, TL.end + 0.15);
+        tl.fromTo("#endAsk", { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, TL.end + 0.3);
+        tl.fromTo("#endSub", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power2.out" }, TL.end + 0.5);
+        if ($("#endNote")) tl.fromTo("#endNote", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, TL.end + 0.75);
+        tl.fromTo("#endWa", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, TL.end + 0.6);
+        tl.fromTo("#endCar", { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, TL.end + 0.3);
+        if ($("#endHint")) tl.fromTo("#endHint", { opacity: 0 }, { opacity: 1, duration: 0.3 }, TL.end + 1.0);
+        if ($("#endHint")) tl.fromTo("#endHint svg", { y: -6 }, { y: 8, duration: 0.35, yoyo: true, repeat: 5, ease: "sine.inOut", immediateRender: false }, TL.end + 1.0);
+        // מספר הוואטסאפ קופץ כל שנייה עד הסוף (אליחי 30.10)
+        for (let t = TL.end + 1.0; t < TL.total - 0.5; t += 1.0) {
+          tl.fromTo("#endWa", { y: 0, scale: 1 }, { y: -38, scale: 1.08, duration: 0.18, ease: "power2.out", immediateRender: false }, t);
+          tl.to("#endWa", { y: 0, scale: 1, duration: 0.5, ease: "bounce.out" }, t + 0.18);
+        }
+        tl.set({}, {}, TL.total);
+        tl.seek(0);
+        window.__timelines["main"] = tl;
+      }
+
+      if (document.fonts && document.fonts.load) {
+        Promise.all([document.fonts.load('700 132px "Karantina"'), document.fonts.load('900 32px "Heebo"')]).then(() => document.fonts.ready).then(build);
+      } else build();
+    </script>
+  </body>
+</html>

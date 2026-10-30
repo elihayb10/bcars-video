@@ -1,13 +1,10 @@
 name: render
-# סרטון עדכני לכל רכב במלאי, פעמיים ביום, שעה וחצי לפני ריצות המכונה (08:00 ו-18:00 שעון ישראל בחורף).
-# רק רכב חדש או שהשתנה נבנה. הסרטונים בגרסה "videos", והרשימה ב-videos.json. ראו pipeline.mjs
+# סרטון NOVEMBER SALE עדכני לכל רכב במלאי, פעמיים ביום, שעה וחצי לפני ריצות המכונה (08:00 ו-18:00 שעון ישראל בחורף).
+# רק רכב חדש או שהשתנה נבנה. הסרטונים בגרסה "videos-sale", והרשימה ב-videos-sale.json. ראו pipeline.mjs
 on:
   schedule:
     - cron: '30 4,14 * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['template/**', 'render.mjs', 'pipeline.mjs', 'video_data.cjs', '.github/workflows/render.yml']
 permissions:
   contents: write
 concurrency:
