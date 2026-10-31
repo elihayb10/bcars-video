@@ -1,5 +1,47 @@
 {
  "videos": {
+  "3769780": {
+   "sig": "054474480d9f",
+   "file": "3769780-054474480d9f.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/3769780-054474480d9f.mp4",
+   "name": "סקודה סופרב 2017",
+   "at": "2026-10-31T16:35:06.642Z"
+  },
+  "6751539": {
+   "sig": "507b68546ad6",
+   "file": "6751539-507b68546ad6.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/6751539-507b68546ad6.mp4",
+   "name": "יונדאי טוסון 2016",
+   "at": "2026-10-31T16:35:16.156Z"
+  },
+  "7979332": {
+   "sig": "155c182b0778",
+   "file": "7979332-155c182b0778.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/7979332-155c182b0778.mp4",
+   "name": "רובר דיסקברי ספורט 2015",
+   "at": "2026-10-31T16:35:21.051Z"
+  },
+  "9151332": {
+   "sig": "180dd4f3bb56",
+   "file": "9151332-180dd4f3bb56.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/9151332-180dd4f3bb56.mp4",
+   "name": "שברולט מאליבו 2015",
+   "at": "2026-10-31T16:35:29.601Z"
+  },
+  "11815203": {
+   "sig": "054535a4dcb4",
+   "file": "11815203-054535a4dcb4.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/11815203-054535a4dcb4.mp4",
+   "name": "יונדאי טוסון 2022",
+   "at": "2026-10-31T16:34:44.687Z"
+  },
+  "22639903": {
+   "sig": "dfeb0b859b1a",
+   "file": "22639903-dfeb0b859b1a.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/22639903-dfeb0b859b1a.mp4",
+   "name": "פיג'ו 2008 2023",
+   "at": "2026-10-31T16:34:47.070Z"
+  },
   "24697103": {
    "sig": "f55c72d1f79d",
    "file": "24697103-f55c72d1f79d.mp4",
@@ -8,18 +50,67 @@
    "at": "2026-10-30T14:07:08.046Z"
   },
   "24861903": {
-   "sig": "4e033b19893a",
-   "file": "24861903-4e033b19893a.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/24861903-4e033b19893a.mp4",
+   "sig": "ce3bdda4370b",
+   "file": "24861903-ce3bdda4370b.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/24861903-ce3bdda4370b.mp4",
    "name": "קרייזלר דודג׳ ראם 2023",
-   "at": "2026-10-30T14:07:12.481Z"
+   "at": "2026-10-31T16:34:49.654Z"
+  },
+  "26379601": {
+   "sig": "be7f8bb34216",
+   "file": "26379601-be7f8bb34216.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/26379601-be7f8bb34216.mp4",
+   "name": "פיאט טיפו 2017",
+   "at": "2026-10-31T16:34:51.992Z"
+  },
+  "26568403": {
+   "sig": "c1e7c623b57d",
+   "file": "26568403-c1e7c623b57d.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/26568403-c1e7c623b57d.mp4",
+   "name": "סיאט קופרה 2023",
+   "at": "2026-10-31T16:34:54.463Z"
+  },
+  "30690001": {
+   "sig": "66f619b5a6d2",
+   "file": "30690001-66f619b5a6d2.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/30690001-66f619b5a6d2.mp4",
+   "name": "מזדה 2 2018",
+   "at": "2026-10-31T16:34:57.510Z"
+  },
+  "36017302": {
+   "sig": "7d3184b8fabf",
+   "file": "36017302-7d3184b8fabf.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/36017302-7d3184b8fabf.mp4",
+   "name": "יונדאי I20 2021",
+   "at": "2026-10-31T16:34:59.738Z"
+  },
+  "36558402": {
+   "sig": "32387946e459",
+   "file": "36558402-32387946e459.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/36558402-32387946e459.mp4",
+   "name": "מיצובישי ספייס סטאר 2021",
+   "at": "2026-10-31T16:35:01.858Z"
+  },
+  "37341201": {
+   "sig": "698451ed5257",
+   "file": "37341201-698451ed5257.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/37341201-698451ed5257.mp4",
+   "name": "סקודה ראפיד 2018",
+   "at": "2026-10-31T16:35:03.898Z"
+  },
+  "46342302": {
+   "sig": "11bba51196be",
+   "file": "46342302-11bba51196be.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/46342302-11bba51196be.mp4",
+   "name": "יונדאי I10 2021",
+   "at": "2026-10-31T16:35:08.831Z"
   },
   "51844602": {
-   "sig": "c740fecdf27c",
-   "file": "51844602-c740fecdf27c.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/51844602-c740fecdf27c.mp4",
+   "sig": "d33dccad56d9",
+   "file": "51844602-d33dccad56d9.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/51844602-d33dccad56d9.mp4",
    "name": "שברולט סילברדו 2022",
-   "at": "2026-10-30T14:07:17.786Z"
+   "at": "2026-10-31T16:35:11.317Z"
   },
   "51911402": {
    "sig": "1754f109c445",
@@ -28,14 +119,49 @@
    "name": "קאדילאק XT5 2022",
    "at": "2026-10-30T14:07:22.039Z"
   },
+  "64072001": {
+   "sig": "74da23e19754",
+   "file": "64072001-74da23e19754.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/64072001-74da23e19754.mp4",
+   "name": "רנו גרנד קופה 2019",
+   "at": "2026-10-31T16:35:13.588Z"
+  },
+  "77419201": {
+   "sig": "f87a9cd13be9",
+   "file": "77419201-f87a9cd13be9.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/77419201-f87a9cd13be9.mp4",
+   "name": "יונדאי טוסון 2019",
+   "at": "2026-10-31T16:35:18.614Z"
+  },
+  "79959401": {
+   "sig": "9e3bec8519f5",
+   "file": "79959401-9e3bec8519f5.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/79959401-9e3bec8519f5.mp4",
+   "name": "סובארו XV 2019",
+   "at": "2026-10-31T16:35:23.102Z"
+  },
   "80290202": {
    "sig": "510b7fd41f3e",
    "file": "80290202-510b7fd41f3e.mp4",
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/80290202-510b7fd41f3e.mp4",
    "name": "קאדילאק XT4 2022",
    "at": "2026-10-30T14:07:26.793Z"
+  },
+  "82068603": {
+   "sig": "1083df6f4bf9",
+   "file": "82068603-1083df6f4bf9.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/82068603-1083df6f4bf9.mp4",
+   "name": "גילי גיאומטרי C 2024",
+   "at": "2026-10-31T16:35:25.288Z"
+  },
+  "84365502": {
+   "sig": "cac986df1157",
+   "file": "84365502-cac986df1157.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/84365502-cac986df1157.mp4",
+   "name": "סיטרואן ברלינגו 2022",
+   "at": "2026-10-31T16:35:27.463Z"
   }
  },
- "updated": "2026-10-30T14:07:26.794Z",
- "count": 5
+ "updated": "2026-10-31T16:35:29.602Z",
+ "count": 23
 }

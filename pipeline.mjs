@@ -76,6 +76,44 @@ for (const { plate, sig, name } of [...list].sort((a, b) => a.ageDays - b.ageDay
   } catch (e) { fails.push(`${name}: ${e.message.split('\n')[0]}`); }
 }
 
+// 4ב. כרטיסי קרוסלה בעיצוב הסייל (cards.mjs), לכל רכב במלאי עם מחיר פרסום. בלי קריינות, ולכן בלי קרדיטים.
+// נשמרים בענף "cards" (קומיט אחד, רק הקבצים העדכניים): מטא מושכת תמונות מ-raw.githubusercontent, ולא מגרסאות
+const CBR = 'cards', craw = (f) => `https://raw.githubusercontent.com/${REPO}/${CBR}/${f}`;
+run('node', ['../video_data.cjs', 'carousel-jobs-all', 'carousel-jobs'], { cwd: 'data' });
+const clist = JSON.parse(fs.readFileSync('data/carousel-jobs/_list.json', 'utf8'));
+const cman = fs.existsSync('carousel-sale.json') ? JSON.parse(fs.readFileSync('carousel-sale.json', 'utf8')) : { cards: {} };
+fs.rmSync('cards-branch', { recursive: true, force: true });
+try { run('git', ['clone', '-q', '--depth', '1', '--branch', CBR, `https://x-access-token:${process.env.GH_TOKEN}@github.com/${REPO}.git`, 'cards-branch']); }
+catch { fs.mkdirSync('cards-branch'); run('git', ['init', '-q', '-b', CBR], { cwd: 'cards-branch' }); }
+const have = new Set(fs.readdirSync('cards-branch').filter((f) => f.endsWith('.jpg')));
+let cbuilt = 0;
+for (const { plate, sig, name } of clist) {
+  const cur = cman.cards[plate];
+  if (cur && cur.sig === sig && cur.files.every((f) => have.has(f))) continue;
+  try {
+    fs.rmSync('out/cards', { recursive: true, force: true });
+    run('node', ['cards.mjs', `data/carousel-jobs/${plate}.json`, 'out/cards', `${plate}-${sig}`]);
+    const files = fs.readdirSync('out/cards').filter((f) => f.endsWith('.jpg')).sort();
+    for (const f of files) { fs.copyFileSync(`out/cards/${f}`, `cards-branch/${f}`); have.add(f); }
+    cman.cards[plate] = { sig, files, urls: files.map(craw), name, at: new Date().toISOString() };
+    cbuilt++;
+  } catch (e) { fails.push(`קרוסלה ${name}: ${e.message.split('\n')[0]}`); }
+}
+const cgone = Object.keys(cman.cards).filter((p) => !clist.some((x) => x.plate === p) && !cars.cars.some((c) => c.plate === p));
+if (safe) for (const p of cgone) delete cman.cards[p];
+// בענף נשארים רק הכרטיסים שברשימה. קומיט יתום אחד ודחיפה בכוח, כדי שהענף לא יגדל
+const keep = new Set(Object.values(cman.cards).flatMap((v) => v.files));
+for (const f of have) if (!keep.has(f)) fs.rmSync(`cards-branch/${f}`, { force: true });
+if (cbuilt || cgone.length) {
+  const g = (...a) => run('git', ['-c', 'user.name=bcars-video-bot', '-c', 'user.email=bcars-video-bot@users.noreply.github.com', ...a], { cwd: 'cards-branch' });
+  g('checkout', '-q', '--orphan', 'tmp'); g('add', '-A'); g('commit', '-q', '-m', `carousel cards: ${keep.size} files`);
+  g('push', '-q', '-f', `https://x-access-token:${process.env.GH_TOKEN}@github.com/${REPO}.git`, `tmp:${CBR}`);
+}
+cman.updated = new Date().toISOString(); cman.count = Object.keys(cman.cards).length;
+cman.cards = Object.fromEntries(Object.entries(cman.cards).sort());
+fs.writeFileSync('carousel-sale.json', JSON.stringify(cman, null, 1) + '\n');
+console.log(`קרוסלות: נבנו ${cbuilt}, ברשימה ${cman.count}`);
+
 // 5. רכב שנמכר: הסרטון נמחק
 assets = release(TAG, 'סרטוני NOVEMBER SALE');
 if (safe) for (const plate of gone) {
@@ -92,7 +130,7 @@ man.videos = Object.fromEntries(Object.entries(man.videos).sort());
 fs.writeFileSync('videos-sale.json', JSON.stringify(man, null, 1) + '\n');
 console.log(`נבנו ${built}. במלאי ${list.length} עם מחיר פרסום, עם סרטון ${man.count}.`);
 
-run('git', ['add', 'videos-sale.json']);
+run('git', ['add', 'videos-sale.json', 'carousel-sale.json']);
 try { out('git', ['diff', '--cached', '--quiet']); console.log('אין שינוי לשמירה'); }
 catch {
   run('git', ['-c', 'user.name=bcars-video-bot', '-c', 'user.email=bcars-video-bot@users.noreply.github.com', 'commit', '-q', '-m', `videos-sale: ${built} built, ${man.count} in stock`]);
