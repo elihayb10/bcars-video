@@ -258,7 +258,7 @@ function handPart(c) {
   const h = (c.hand || '').trim();
   // באתר "00"/"01"/"02" = יד 1/2/3, ו-"1" בלי אפס = יד 1 (נבדק מול auto360, 28.10). מציגים כפי שכתוב, ומסתירים יד אמיתית 3+
   const real = Number(h) + (h.startsWith('0') ? 1 : 0);
-  if (!h || !(real < 3)) return '';
+  if (!h || !(real <= 4)) return ''; // עד יד 03 באתר (= יד 4 אמיתית). אליחי 31.10: "תציג עד יד 03" (מעדכן את #99)
   return ` | יד ${h}${c.origin === 'פרטית' ? ' פרטי' : ''}`;
 }
 
@@ -475,7 +475,9 @@ function videoJobSale(c, star, mode, unique) {
   const real = Number(c.hand) + (String(c.hand).startsWith('0') ? 1 : 0);
   if (c.km) segs.push({ beat: 2, icon: 'km', say: `${heNum(c.km)} קילומטר.`, show: `${L(fmt(c.km))} ק״מ` });
   const hand = handPart(c).replace(/^ \| /, '');
-  if (hand) segs.push({ beat: 2, icon: 'key', say: real === 1 ? 'יד ראשונה.' : 'יד שנייה.', show: hand });
+  // הקריין קורא את היד בדיוק כמו באתר (אליחי 31.10: "יד 01 אל תגיד יד שנייה", "יד 02 צריך להגיד יד אפס שתיים"): 1 = יד ראשונה, 01 = יד אפס אחת
+  const hs = String(c.hand).trim(), handSay = hs === '1' ? 'יד ראשונה.' : /^0[0-9]$/.test(hs) ? `יד אפס ${hs[1] === '0' ? 'אפס' : HE_UNITS[+hs[1]]}.` : '';
+  if (hand) segs.push({ beat: 2, icon: 'key', say: handSay, show: hand, ...(handSay ? {} : { hold: 1.3 }) });
   if (testValid(c.test)) segs.push({ beat: 2, opt: 2, icon: 'test', say: '', show: `טסט עד ${L(c.test)}`, hold: 1.3 });
   if (mode === 'sale') {
     if (!c.salePrice) throw new Error(`${c.plate}: אין מחיר מבצע`);
