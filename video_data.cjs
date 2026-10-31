@@ -232,8 +232,8 @@ async function collect() {
   if (!api && !flag('--direct')) api = await stockFromGithub();
   const motData = await mot(cars.map(c => c.plate));
   let saleVideos = null, saleVideosWhy = '';
-  try { saleVideos = JSON.parse(await get(NOV.manifest, 2)); } catch (e) { saleVideosWhy = e.message; }
-  let saleCards = null; try { saleCards = JSON.parse(await get(NOV.cardsManifest, 2)); } catch (e) { saleVideosWhy += ' / ' + e.message; }
+  try { saleVideos = JSON.parse(await get(NOV.manifest + '?t=' + Date.now(), 2)); } catch (e) { saleVideosWhy = e.message; }
+  let saleCards = null; try { saleCards = JSON.parse(await get(NOV.cardsManifest + '?t=' + Date.now(), 2)); } catch (e) { saleVideosWhy += ' / ' + e.message; }
   writeJson('cars.json', { at: new Date().toISOString(), count: cars.length, cars, apiPlates: api, apiBody: api ? auto360Body : {}, apiInfo: auto360Info, apiWhy: auto360Why,
     mot: motData, motWhy, saleVideos, saleCards, saleVideosWhy });
   const bad = cars.filter(c => !c.plate || !c.title);
