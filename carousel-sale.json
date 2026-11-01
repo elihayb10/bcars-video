@@ -116,35 +116,6 @@
    "name": "שברולט טראוורס 2012",
    "at": "2026-10-31T16:55:30.163Z"
   },
-  "6751539": {
-   "sig": "ad20e1ba91ef",
-   "files": [
-    "6751539-ad20e1ba91ef-01.jpg",
-    "6751539-ad20e1ba91ef-02.jpg",
-    "6751539-ad20e1ba91ef-03.jpg",
-    "6751539-ad20e1ba91ef-04.jpg",
-    "6751539-ad20e1ba91ef-05.jpg",
-    "6751539-ad20e1ba91ef-06.jpg",
-    "6751539-ad20e1ba91ef-07.jpg",
-    "6751539-ad20e1ba91ef-08.jpg",
-    "6751539-ad20e1ba91ef-09.jpg",
-    "6751539-ad20e1ba91ef-10.jpg"
-   ],
-   "urls": [
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-01.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-02.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-03.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-04.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-05.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-06.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-07.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-08.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-09.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-10.jpg"
-   ],
-   "name": "יונדאי טוסון 2016",
-   "at": "2026-10-30T14:38:57.650Z"
-  },
   "7979332": {
    "sig": "848807b06f57",
    "files": [
@@ -696,35 +667,6 @@
    "name": "סקודה ראפיד 2018",
    "at": "2026-10-31T16:55:22.162Z"
   },
-  "37397901": {
-   "sig": "1098fca1048d",
-   "files": [
-    "37397901-1098fca1048d-01.jpg",
-    "37397901-1098fca1048d-02.jpg",
-    "37397901-1098fca1048d-03.jpg",
-    "37397901-1098fca1048d-04.jpg",
-    "37397901-1098fca1048d-05.jpg",
-    "37397901-1098fca1048d-06.jpg",
-    "37397901-1098fca1048d-07.jpg",
-    "37397901-1098fca1048d-08.jpg",
-    "37397901-1098fca1048d-09.jpg",
-    "37397901-1098fca1048d-10.jpg"
-   ],
-   "urls": [
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/37397901-1098fca1048d-01.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/37397901-1098fca1048d-02.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/37397901-1098fca1048d-03.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/37397901-1098fca1048d-04.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/37397901-1098fca1048d-05.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/37397901-1098fca1048d-06.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/37397901-1098fca1048d-07.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/37397901-1098fca1048d-08.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/37397901-1098fca1048d-09.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/37397901-1098fca1048d-10.jpg"
-   ],
-   "name": "סיאט איביזה 2018",
-   "at": "2026-10-30T14:38:57.541Z"
-  },
   "46342302": {
    "sig": "ceacf891b0b1",
    "files": [
@@ -1248,6 +1190,6 @@
    "at": "2026-10-31T16:57:49.639Z"
   }
  },
- "updated": "2026-11-01T11:27:37.355Z",
- "count": 43
+ "updated": "2026-11-01T19:05:57.447Z",
+ "count": 41
 }
