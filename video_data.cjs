@@ -62,14 +62,15 @@ const ilDate = (d = new Date()) => { const p = ilParts(d); return `${p.day}.${p.
 const isSunday = () => ilParts().weekday === 'Sun';
 const byIdDesc = (a, b) => (BigInt(b.id) > BigInt(a.id) ? 1 : -1);
 
-// האתר והפיד מחזירים לפעמים 415/429 בעומס (כמה ריצות במקביל, 22.10.2026): מנסים שוב עם המתנה הולכת וגדלה
-async function get(url, tries = 6) {
+// האתר והפיד מחזירים לפעמים 415/429 בעומס (כמה ריצות במקביל, 22.10.2026): מנסים שוב עם המתנה הולכת וגדלה.
+// 2.11.2026: חסימת 415 בגיטהאב נמשכה יותר מדקה והפילה את ריצת הסרטונים, לכן ההמתנה עד כ-5 דקות בסך הכול
+async function get(url, tries = 7) {
   for (let i = 1; i <= tries; i++) {
     try {
       const r = await fetch(url, { redirect: 'follow' }); // בלי User-Agent: אחרת האתר נכנס ללולאת הפניות
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return await r.text();
-    } catch (e) { if (i === tries) throw new Error(url + ': ' + e.message); await new Promise(s => setTimeout(s, 4000 * i)); }
+    } catch (e) { if (i === tries) throw new Error(url + ': ' + e.message); await new Promise(s => setTimeout(s, 15000 * i)); }
   }
 }
 
