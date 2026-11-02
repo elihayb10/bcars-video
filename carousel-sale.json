@@ -116,6 +116,35 @@
    "name": "שברולט טראוורס 2012",
    "at": "2026-10-31T16:55:30.163Z"
   },
+  "6751539": {
+   "sig": "ad20e1ba91ef",
+   "files": [
+    "6751539-ad20e1ba91ef-01.jpg",
+    "6751539-ad20e1ba91ef-02.jpg",
+    "6751539-ad20e1ba91ef-03.jpg",
+    "6751539-ad20e1ba91ef-04.jpg",
+    "6751539-ad20e1ba91ef-05.jpg",
+    "6751539-ad20e1ba91ef-06.jpg",
+    "6751539-ad20e1ba91ef-07.jpg",
+    "6751539-ad20e1ba91ef-08.jpg",
+    "6751539-ad20e1ba91ef-09.jpg",
+    "6751539-ad20e1ba91ef-10.jpg"
+   ],
+   "urls": [
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-01.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-02.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-03.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-04.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-05.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-06.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-07.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-08.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-09.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/6751539-ad20e1ba91ef-10.jpg"
+   ],
+   "name": "יונדאי טוסון 2016",
+   "at": "2026-11-02T17:30:29.514Z"
+  },
   "7979332": {
    "sig": "848807b06f57",
    "files": [
@@ -1073,35 +1102,6 @@
    "name": "סיאט ארונה 2019",
    "at": "2026-10-31T16:57:09.206Z"
   },
-  "84365502": {
-   "sig": "7c63ee4ecdf8",
-   "files": [
-    "84365502-7c63ee4ecdf8-01.jpg",
-    "84365502-7c63ee4ecdf8-02.jpg",
-    "84365502-7c63ee4ecdf8-03.jpg",
-    "84365502-7c63ee4ecdf8-04.jpg",
-    "84365502-7c63ee4ecdf8-05.jpg",
-    "84365502-7c63ee4ecdf8-06.jpg",
-    "84365502-7c63ee4ecdf8-07.jpg",
-    "84365502-7c63ee4ecdf8-08.jpg",
-    "84365502-7c63ee4ecdf8-09.jpg",
-    "84365502-7c63ee4ecdf8-10.jpg"
-   ],
-   "urls": [
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/84365502-7c63ee4ecdf8-01.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/84365502-7c63ee4ecdf8-02.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/84365502-7c63ee4ecdf8-03.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/84365502-7c63ee4ecdf8-04.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/84365502-7c63ee4ecdf8-05.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/84365502-7c63ee4ecdf8-06.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/84365502-7c63ee4ecdf8-07.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/84365502-7c63ee4ecdf8-08.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/84365502-7c63ee4ecdf8-09.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/84365502-7c63ee4ecdf8-10.jpg"
-   ],
-   "name": "סיטרואן ברלינגו 2022",
-   "at": "2026-10-30T14:38:57.737Z"
-  },
   "85078802": {
    "sig": "12942516eef2",
    "files": [
@@ -1190,6 +1190,6 @@
    "at": "2026-10-31T16:57:49.639Z"
   }
  },
- "updated": "2026-11-01T19:05:57.447Z",
+ "updated": "2026-11-02T17:30:32.404Z",
  "count": 41
 }
