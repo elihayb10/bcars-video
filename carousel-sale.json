@@ -897,35 +897,6 @@
    "name": "קאדילאק XT5 2022",
    "at": "2026-10-30T14:38:57.615Z"
   },
-  "53263402": {
-   "sig": "94b4b99a6d8c",
-   "files": [
-    "53263402-94b4b99a6d8c-01.jpg",
-    "53263402-94b4b99a6d8c-02.jpg",
-    "53263402-94b4b99a6d8c-03.jpg",
-    "53263402-94b4b99a6d8c-04.jpg",
-    "53263402-94b4b99a6d8c-05.jpg",
-    "53263402-94b4b99a6d8c-06.jpg",
-    "53263402-94b4b99a6d8c-07.jpg",
-    "53263402-94b4b99a6d8c-08.jpg",
-    "53263402-94b4b99a6d8c-09.jpg",
-    "53263402-94b4b99a6d8c-10.jpg"
-   ],
-   "urls": [
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/53263402-94b4b99a6d8c-01.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/53263402-94b4b99a6d8c-02.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/53263402-94b4b99a6d8c-03.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/53263402-94b4b99a6d8c-04.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/53263402-94b4b99a6d8c-05.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/53263402-94b4b99a6d8c-06.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/53263402-94b4b99a6d8c-07.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/53263402-94b4b99a6d8c-08.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/53263402-94b4b99a6d8c-09.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/53263402-94b4b99a6d8c-10.jpg"
-   ],
-   "name": "סקודה אוקטביה 2021",
-   "at": "2026-10-31T16:55:42.016Z"
-  },
   "55675102": {
    "sig": "b32540b53199",
    "files": [
@@ -1100,35 +1071,6 @@
    "name": "קאדילאק XT4 2022",
    "at": "2026-10-30T14:38:57.695Z"
   },
-  "82068603": {
-   "sig": "ea7975936eb0",
-   "files": [
-    "82068603-ea7975936eb0-01.jpg",
-    "82068603-ea7975936eb0-02.jpg",
-    "82068603-ea7975936eb0-03.jpg",
-    "82068603-ea7975936eb0-04.jpg",
-    "82068603-ea7975936eb0-05.jpg",
-    "82068603-ea7975936eb0-06.jpg",
-    "82068603-ea7975936eb0-07.jpg",
-    "82068603-ea7975936eb0-08.jpg",
-    "82068603-ea7975936eb0-09.jpg",
-    "82068603-ea7975936eb0-10.jpg"
-   ],
-   "urls": [
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/82068603-ea7975936eb0-01.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/82068603-ea7975936eb0-02.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/82068603-ea7975936eb0-03.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/82068603-ea7975936eb0-04.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/82068603-ea7975936eb0-05.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/82068603-ea7975936eb0-06.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/82068603-ea7975936eb0-07.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/82068603-ea7975936eb0-08.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/82068603-ea7975936eb0-09.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/82068603-ea7975936eb0-10.jpg"
-   ],
-   "name": "גילי גיאומטרי C 2024",
-   "at": "2026-10-30T14:38:57.711Z"
-  },
   "83628901": {
    "sig": "ce68d3b7e913",
    "files": [
@@ -1246,6 +1188,6 @@
    "at": "2026-10-31T16:57:49.639Z"
   }
  },
- "updated": "2026-11-04T12:30:33.113Z",
- "count": 43
+ "updated": "2026-11-04T20:54:18.392Z",
+ "count": 41
 }
