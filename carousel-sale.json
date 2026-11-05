@@ -346,6 +346,35 @@
    "name": "סקודה קודיאק 2019",
    "at": "2026-10-30T14:38:57.376Z"
   },
+  "18182703": {
+   "sig": "e5a5f3784f70",
+   "files": [
+    "18182703-e5a5f3784f70-01.jpg",
+    "18182703-e5a5f3784f70-02.jpg",
+    "18182703-e5a5f3784f70-03.jpg",
+    "18182703-e5a5f3784f70-04.jpg",
+    "18182703-e5a5f3784f70-05.jpg",
+    "18182703-e5a5f3784f70-06.jpg",
+    "18182703-e5a5f3784f70-07.jpg",
+    "18182703-e5a5f3784f70-08.jpg",
+    "18182703-e5a5f3784f70-09.jpg",
+    "18182703-e5a5f3784f70-10.jpg"
+   ],
+   "urls": [
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/18182703-e5a5f3784f70-01.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/18182703-e5a5f3784f70-02.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/18182703-e5a5f3784f70-03.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/18182703-e5a5f3784f70-04.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/18182703-e5a5f3784f70-05.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/18182703-e5a5f3784f70-06.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/18182703-e5a5f3784f70-07.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/18182703-e5a5f3784f70-08.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/18182703-e5a5f3784f70-09.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/18182703-e5a5f3784f70-10.jpg"
+   ],
+   "name": "סקודה סקאלה 2022",
+   "at": "2026-11-05T12:47:02.981Z"
+  },
   "22639903": {
    "sig": "b7738bd20175",
    "files": [
@@ -897,6 +926,35 @@
    "name": "קאדילאק XT5 2022",
    "at": "2026-10-30T14:38:57.615Z"
   },
+  "54247703": {
+   "sig": "ed28a2ff96f7",
+   "files": [
+    "54247703-ed28a2ff96f7-01.jpg",
+    "54247703-ed28a2ff96f7-02.jpg",
+    "54247703-ed28a2ff96f7-03.jpg",
+    "54247703-ed28a2ff96f7-04.jpg",
+    "54247703-ed28a2ff96f7-05.jpg",
+    "54247703-ed28a2ff96f7-06.jpg",
+    "54247703-ed28a2ff96f7-07.jpg",
+    "54247703-ed28a2ff96f7-08.jpg",
+    "54247703-ed28a2ff96f7-09.jpg",
+    "54247703-ed28a2ff96f7-10.jpg"
+   ],
+   "urls": [
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/54247703-ed28a2ff96f7-01.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/54247703-ed28a2ff96f7-02.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/54247703-ed28a2ff96f7-03.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/54247703-ed28a2ff96f7-04.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/54247703-ed28a2ff96f7-05.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/54247703-ed28a2ff96f7-06.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/54247703-ed28a2ff96f7-07.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/54247703-ed28a2ff96f7-08.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/54247703-ed28a2ff96f7-09.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/54247703-ed28a2ff96f7-10.jpg"
+   ],
+   "name": "מיצובישי אקליפס קרוס 2023",
+   "at": "2026-11-05T12:47:06.399Z"
+  },
   "55675102": {
    "sig": "b32540b53199",
    "files": [
@@ -1188,6 +1246,6 @@
    "at": "2026-10-31T16:57:49.639Z"
   }
  },
- "updated": "2026-11-04T20:54:18.392Z",
- "count": 41
+ "updated": "2026-11-05T12:47:09.016Z",
+ "count": 43
 }
