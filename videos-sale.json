@@ -1,5 +1,12 @@
 {
  "videos": {
+  "2096630": {
+   "sig": "148c635bb8a2",
+   "file": "2096630-148c635bb8a2.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/2096630-148c635bb8a2.mp4",
+   "name": "מזדה CX-5 2016",
+   "at": "2026-11-08T11:30:53.796Z"
+  },
   "3769780": {
    "sig": "a762e3efb294",
    "file": "3769780-a762e3efb294.mp4",
@@ -7,12 +14,19 @@
    "name": "סקודה סופרב 2017",
    "at": "2026-10-31T17:07:33.886Z"
   },
+  "4898212": {
+   "sig": "d6c053f800bd",
+   "file": "4898212-d6c053f800bd.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/4898212-d6c053f800bd.mp4",
+   "name": "אאודי Q3 2013",
+   "at": "2026-11-08T11:32:38.047Z"
+  },
   "6638873": {
-   "sig": "c39aa400a910",
-   "file": "6638873-c39aa400a910.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/6638873-c39aa400a910.mp4",
+   "sig": "7c4869a7f6e0",
+   "file": "6638873-7c4869a7f6e0.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/6638873-7c4869a7f6e0.mp4",
    "name": "סיאט איביזה 2011",
-   "at": "2026-11-04T12:30:12.972Z"
+   "at": "2026-11-08T11:34:12.644Z"
   },
   "6751539": {
    "sig": "507b68546ad6",
@@ -176,6 +190,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-07T19:02:02.502Z",
- "count": 25
+ "updated": "2026-11-08T11:34:39.772Z",
+ "count": 27
 }
