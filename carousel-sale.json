@@ -433,6 +433,35 @@
    "name": "סקודה קודיאק 2019",
    "at": "2026-10-30T14:38:57.376Z"
   },
+  "14566103": {
+   "sig": "a2d39438342e",
+   "files": [
+    "14566103-a2d39438342e-01.jpg",
+    "14566103-a2d39438342e-02.jpg",
+    "14566103-a2d39438342e-03.jpg",
+    "14566103-a2d39438342e-04.jpg",
+    "14566103-a2d39438342e-05.jpg",
+    "14566103-a2d39438342e-06.jpg",
+    "14566103-a2d39438342e-07.jpg",
+    "14566103-a2d39438342e-08.jpg",
+    "14566103-a2d39438342e-09.jpg",
+    "14566103-a2d39438342e-10.jpg"
+   ],
+   "urls": [
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-01.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-02.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-03.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-04.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-05.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-06.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-07.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-08.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-09.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-10.jpg"
+   ],
+   "name": "טויוטה אייגו X 2022",
+   "at": "2026-11-09T23:34:22.779Z"
+  },
   "18182703": {
    "sig": "e5a5f3784f70",
    "files": [
@@ -1100,35 +1129,6 @@
    "name": "רנו גרנד קופה 2019",
    "at": "2026-10-31T16:55:49.891Z"
   },
-  "71402601": {
-   "sig": "161eeb87a6e5",
-   "files": [
-    "71402601-161eeb87a6e5-01.jpg",
-    "71402601-161eeb87a6e5-02.jpg",
-    "71402601-161eeb87a6e5-03.jpg",
-    "71402601-161eeb87a6e5-04.jpg",
-    "71402601-161eeb87a6e5-05.jpg",
-    "71402601-161eeb87a6e5-06.jpg",
-    "71402601-161eeb87a6e5-07.jpg",
-    "71402601-161eeb87a6e5-08.jpg",
-    "71402601-161eeb87a6e5-09.jpg",
-    "71402601-161eeb87a6e5-10.jpg"
-   ],
-   "urls": [
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/71402601-161eeb87a6e5-01.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/71402601-161eeb87a6e5-02.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/71402601-161eeb87a6e5-03.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/71402601-161eeb87a6e5-04.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/71402601-161eeb87a6e5-05.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/71402601-161eeb87a6e5-06.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/71402601-161eeb87a6e5-07.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/71402601-161eeb87a6e5-08.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/71402601-161eeb87a6e5-09.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/71402601-161eeb87a6e5-10.jpg"
-   ],
-   "name": "קיה נירו 2020",
-   "at": "2026-10-30T14:38:57.660Z"
-  },
   "77419201": {
    "sig": "67e07fb1a775",
    "files": [
@@ -1333,6 +1333,6 @@
    "at": "2026-10-31T16:57:49.639Z"
   }
  },
- "updated": "2026-11-09T13:20:57.797Z",
+ "updated": "2026-11-09T23:34:25.006Z",
  "count": 46
 }
