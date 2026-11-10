@@ -1,5 +1,12 @@
 {
  "videos": {
+  "1625730": {
+   "sig": "a8c8f06c725f",
+   "file": "1625730-a8c8f06c725f.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/1625730-a8c8f06c725f.mp4",
+   "name": "סובארו XV 2015",
+   "at": "2026-11-10T13:01:02.571Z"
+  },
   "2096630": {
    "sig": "148c635bb8a2",
    "file": "2096630-148c635bb8a2.mp4",
@@ -48,6 +55,13 @@
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/7979332-155c182b0778.mp4",
    "name": "רובר דיסקברי ספורט 2015",
    "at": "2026-10-31T16:35:21.051Z"
+  },
+  "8057676": {
+   "sig": "4ee3793467d2",
+   "file": "8057676-4ee3793467d2.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/8057676-4ee3793467d2.mp4",
+   "name": "סקודה פאביה 2011",
+   "at": "2026-11-10T13:03:36.742Z"
   },
   "9151332": {
    "sig": "87c3fabb55fa",
@@ -140,13 +154,6 @@
    "name": "סקודה ראפיד 2018",
    "at": "2026-10-31T17:07:31.619Z"
   },
-  "46342302": {
-   "sig": "43b611aa8525",
-   "file": "46342302-43b611aa8525.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/46342302-43b611aa8525.mp4",
-   "name": "יונדאי I10 2021",
-   "at": "2026-11-09T13:20:35.035Z"
-  },
   "46623503": {
    "sig": "d4aa88ef3a5d",
    "file": "46623503-d4aa88ef3a5d.mp4",
@@ -204,6 +211,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-09T23:34:25.798Z",
- "count": 29
+ "updated": "2026-11-10T13:04:00.234Z",
+ "count": 30
 }
