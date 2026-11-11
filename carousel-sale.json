@@ -984,6 +984,35 @@
    "name": "יונדאי אקסנט 2021",
    "at": "2026-10-30T14:38:57.585Z"
   },
+  "48096201": {
+   "sig": "3b07892f7e7c",
+   "files": [
+    "48096201-3b07892f7e7c-01.jpg",
+    "48096201-3b07892f7e7c-02.jpg",
+    "48096201-3b07892f7e7c-03.jpg",
+    "48096201-3b07892f7e7c-04.jpg",
+    "48096201-3b07892f7e7c-05.jpg",
+    "48096201-3b07892f7e7c-06.jpg",
+    "48096201-3b07892f7e7c-07.jpg",
+    "48096201-3b07892f7e7c-08.jpg",
+    "48096201-3b07892f7e7c-09.jpg",
+    "48096201-3b07892f7e7c-10.jpg"
+   ],
+   "urls": [
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/48096201-3b07892f7e7c-01.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/48096201-3b07892f7e7c-02.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/48096201-3b07892f7e7c-03.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/48096201-3b07892f7e7c-04.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/48096201-3b07892f7e7c-05.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/48096201-3b07892f7e7c-06.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/48096201-3b07892f7e7c-07.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/48096201-3b07892f7e7c-08.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/48096201-3b07892f7e7c-09.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/48096201-3b07892f7e7c-10.jpg"
+   ],
+   "name": "שברולט ספארק 2019",
+   "at": "2026-11-11T21:34:51.325Z"
+  },
   "51509702": {
    "sig": "197d9be98da4",
    "files": [
@@ -1333,6 +1362,6 @@
    "at": "2026-10-31T16:57:49.639Z"
   }
  },
- "updated": "2026-11-11T12:08:18.095Z",
- "count": 46
+ "updated": "2026-11-11T21:34:53.683Z",
+ "count": 47
 }
