@@ -50,11 +50,11 @@
    "at": "2026-11-02T17:30:12.574Z"
   },
   "7979332": {
-   "sig": "155c182b0778",
-   "file": "7979332-155c182b0778.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/7979332-155c182b0778.mp4",
+   "sig": "3aa788078140",
+   "file": "7979332-3aa788078140.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/7979332-3aa788078140.mp4",
    "name": "רובר דיסקברי ספורט 2015",
-   "at": "2026-10-31T16:35:21.051Z"
+   "at": "2026-11-11T12:08:04.863Z"
   },
   "8057676": {
    "sig": "4ee3793467d2",
@@ -182,13 +182,6 @@
    "name": "מיצובישי אקליפס קרוס 2023",
    "at": "2026-11-05T12:46:52.937Z"
   },
-  "64072001": {
-   "sig": "a27f2aab9a3d",
-   "file": "64072001-a27f2aab9a3d.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/64072001-a27f2aab9a3d.mp4",
-   "name": "רנו גרנד קופה 2019",
-   "at": "2026-10-31T17:07:38.432Z"
-  },
   "77419201": {
    "sig": "abbbde04fe54",
    "file": "77419201-abbbde04fe54.mp4",
@@ -211,6 +204,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-10T13:04:00.234Z",
- "count": 30
+ "updated": "2026-11-11T12:08:19.718Z",
+ "count": 29
 }
