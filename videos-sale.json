@@ -1,11 +1,11 @@
 {
  "videos": {
   "1625730": {
-   "sig": "a8c8f06c725f",
-   "file": "1625730-a8c8f06c725f.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/1625730-a8c8f06c725f.mp4",
+   "sig": "aa5530f36968",
+   "file": "1625730-aa5530f36968.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/1625730-aa5530f36968.mp4",
    "name": "סובארו XV 2015",
-   "at": "2026-11-10T13:01:02.571Z"
+   "at": "2026-11-12T13:13:21.030Z"
   },
   "2096630": {
    "sig": "148c635bb8a2",
@@ -62,6 +62,13 @@
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/8057676-4ee3793467d2.mp4",
    "name": "סקודה פאביה 2011",
    "at": "2026-11-10T13:03:36.742Z"
+  },
+  "8994738": {
+   "sig": "21116a925b3d",
+   "file": "8994738-21116a925b3d.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/8994738-21116a925b3d.mp4",
+   "name": "קיה פיקנטו 2016",
+   "at": "2026-11-12T13:11:03.482Z"
   },
   "9151332": {
    "sig": "87c3fabb55fa",
@@ -211,6 +218,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-11T21:34:54.435Z",
- "count": 30
+ "updated": "2026-11-12T13:13:44.907Z",
+ "count": 31
 }
