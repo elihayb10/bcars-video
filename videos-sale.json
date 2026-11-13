@@ -7,13 +7,6 @@
    "name": "סובארו XV 2015",
    "at": "2026-11-12T13:13:21.030Z"
   },
-  "2096630": {
-   "sig": "148c635bb8a2",
-   "file": "2096630-148c635bb8a2.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/2096630-148c635bb8a2.mp4",
-   "name": "מזדה CX-5 2016",
-   "at": "2026-11-08T11:30:53.796Z"
-  },
   "3769780": {
    "sig": "a762e3efb294",
    "file": "3769780-a762e3efb294.mp4",
@@ -29,11 +22,11 @@
    "at": "2026-11-08T11:32:38.047Z"
   },
   "5441938": {
-   "sig": "a904569f1d3d",
-   "file": "5441938-a904569f1d3d.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/5441938-a904569f1d3d.mp4",
+   "sig": "a1d24fba434b",
+   "file": "5441938-a1d24fba434b.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/5441938-a1d24fba434b.mp4",
    "name": "סיאט איביזה 2016",
-   "at": "2026-11-08T19:02:29.056Z"
+   "at": "2026-11-13T12:34:44.040Z"
   },
   "6638873": {
    "sig": "7c4869a7f6e0",
@@ -50,11 +43,11 @@
    "at": "2026-11-02T17:30:12.574Z"
   },
   "7979332": {
-   "sig": "3aa788078140",
-   "file": "7979332-3aa788078140.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/7979332-3aa788078140.mp4",
-   "name": "רובר דיסקברי ספורט 2015",
-   "at": "2026-11-11T12:08:04.863Z"
+   "sig": "f917b87453d7",
+   "file": "7979332-f917b87453d7.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/7979332-f917b87453d7.mp4",
+   "name": "לנד רובר דיסקברי ספורט 2015",
+   "at": "2026-11-13T12:42:23.283Z"
   },
   "8057676": {
    "sig": "4ee3793467d2",
@@ -141,11 +134,11 @@
    "at": "2026-10-31T17:07:26.988Z"
   },
   "36017302": {
-   "sig": "7d3184b8fabf",
-   "file": "36017302-7d3184b8fabf.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/36017302-7d3184b8fabf.mp4",
-   "name": "יונדאי I20 2021",
-   "at": "2026-10-31T16:34:59.738Z"
+   "sig": "e9c72137d0e3",
+   "file": "36017302-e9c72137d0e3.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/36017302-e9c72137d0e3.mp4",
+   "name": "יונדאי i20 2021",
+   "at": "2026-11-13T12:39:41.223Z"
   },
   "36558402": {
    "sig": "03f08942e18f",
@@ -162,11 +155,11 @@
    "at": "2026-10-31T17:07:31.619Z"
   },
   "46623503": {
-   "sig": "d4aa88ef3a5d",
-   "file": "46623503-d4aa88ef3a5d.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/46623503-d4aa88ef3a5d.mp4",
-   "name": "סקודה סופרב FL 2023",
-   "at": "2026-11-03T20:39:07.286Z"
+   "sig": "7454e3651fd0",
+   "file": "46623503-7454e3651fd0.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/46623503-7454e3651fd0.mp4",
+   "name": "סקודה סופרב 2023",
+   "at": "2026-11-13T12:37:00.434Z"
   },
   "48096201": {
    "sig": "14f140beb93a",
@@ -218,6 +211,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-12T21:35:25.042Z",
- "count": 31
+ "updated": "2026-11-13T12:43:05.713Z",
+ "count": 30
 }
