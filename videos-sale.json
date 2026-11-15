@@ -28,13 +28,6 @@
    "name": "אאודי Q3 2013",
    "at": "2026-11-08T11:32:38.047Z"
   },
-  "5441938": {
-   "sig": "a1d24fba434b",
-   "file": "5441938-a1d24fba434b.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/5441938-a1d24fba434b.mp4",
-   "name": "סיאט איביזה 2016",
-   "at": "2026-11-13T12:34:44.040Z"
-  },
   "6638873": {
    "sig": "7c4869a7f6e0",
    "file": "6638873-7c4869a7f6e0.mp4",
@@ -62,13 +55,6 @@
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/8057676-4ee3793467d2.mp4",
    "name": "סקודה פאביה 2011",
    "at": "2026-11-10T13:03:36.742Z"
-  },
-  "8994738": {
-   "sig": "21116a925b3d",
-   "file": "8994738-21116a925b3d.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/8994738-21116a925b3d.mp4",
-   "name": "קיה פיקנטו 2016",
-   "at": "2026-11-12T13:11:03.482Z"
   },
   "9151332": {
    "sig": "87c3fabb55fa",
@@ -132,13 +118,6 @@
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/26379601-84516652b60e.mp4",
    "name": "פיאט טיפו 2017",
    "at": "2026-10-31T17:07:24.666Z"
-  },
-  "26568403": {
-   "sig": "c1e7c623b57d",
-   "file": "26568403-c1e7c623b57d.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/26568403-c1e7c623b57d.mp4",
-   "name": "סיאט קופרה 2023",
-   "at": "2026-10-31T16:34:54.463Z"
   },
   "30690001": {
    "sig": "daa68752f7de",
@@ -218,6 +197,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-15T12:19:03.966Z",
- "count": 31
+ "updated": "2026-11-15T19:56:28.871Z",
+ "count": 28
 }
