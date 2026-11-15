@@ -14,6 +14,13 @@
    "name": "סקודה סופרב 2017",
    "at": "2026-10-31T17:07:33.886Z"
   },
+  "3971139": {
+   "sig": "7f35e8bcad05",
+   "file": "3971139-7f35e8bcad05.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/3971139-7f35e8bcad05.mp4",
+   "name": "שברולט אקווינוקס 2017",
+   "at": "2026-11-15T12:14:51.444Z"
+  },
   "4898212": {
    "sig": "d6c053f800bd",
    "file": "4898212-d6c053f800bd.mp4",
@@ -91,6 +98,13 @@
    "name": "סקודה סקאלה 2022",
    "at": "2026-11-05T12:44:20.410Z"
   },
+  "18781602": {
+   "sig": "ab476700b402",
+   "file": "18781602-ab476700b402.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/18781602-ab476700b402.mp4",
+   "name": "קיה ספורטאז׳ 2020",
+   "at": "2026-11-15T12:13:10.645Z"
+  },
   "22639903": {
    "sig": "dfeb0b859b1a",
    "file": "22639903-dfeb0b859b1a.mp4",
@@ -99,18 +113,18 @@
    "at": "2026-10-31T16:34:47.070Z"
   },
   "24697103": {
-   "sig": "22c6ad985d3d",
-   "file": "24697103-22c6ad985d3d.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/24697103-22c6ad985d3d.mp4",
+   "sig": "eb89298f898e",
+   "file": "24697103-eb89298f898e.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/24697103-eb89298f898e.mp4",
    "name": "קרייזלר דודג׳ ראם 2023",
-   "at": "2026-10-31T17:07:21.879Z"
+   "at": "2026-11-15T12:16:45.207Z"
   },
   "24861903": {
-   "sig": "ce3bdda4370b",
-   "file": "24861903-ce3bdda4370b.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/24861903-ce3bdda4370b.mp4",
+   "sig": "f707b04ad55d",
+   "file": "24861903-f707b04ad55d.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/24861903-f707b04ad55d.mp4",
    "name": "קרייזלר דודג׳ ראם 2023",
-   "at": "2026-10-31T16:34:49.654Z"
+   "at": "2026-11-15T12:18:33.791Z"
   },
   "26379601": {
    "sig": "84516652b60e",
@@ -146,13 +160,6 @@
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/36558402-03f08942e18f.mp4",
    "name": "מיצובישי ספייס סטאר 2021",
    "at": "2026-10-31T17:07:29.434Z"
-  },
-  "37341201": {
-   "sig": "7223aedf0998",
-   "file": "37341201-7223aedf0998.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/37341201-7223aedf0998.mp4",
-   "name": "סקודה ראפיד 2018",
-   "at": "2026-10-31T17:07:31.619Z"
   },
   "46623503": {
    "sig": "7454e3651fd0",
@@ -211,6 +218,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-14T19:25:20.630Z",
- "count": 30
+ "updated": "2026-11-15T12:19:03.966Z",
+ "count": 31
 }
