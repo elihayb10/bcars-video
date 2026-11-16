@@ -113,11 +113,11 @@
    "at": "2026-11-15T12:18:33.791Z"
   },
   "26379601": {
-   "sig": "84516652b60e",
-   "file": "26379601-84516652b60e.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/26379601-84516652b60e.mp4",
+   "sig": "4b230ec8d326",
+   "file": "26379601-4b230ec8d326.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/26379601-4b230ec8d326.mp4",
    "name": "פיאט טיפו 2017",
-   "at": "2026-10-31T17:07:24.666Z"
+   "at": "2026-11-16T13:13:12.493Z"
   },
   "30690001": {
    "sig": "daa68752f7de",
@@ -125,6 +125,13 @@
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/30690001-daa68752f7de.mp4",
    "name": "מזדה 2 2018",
    "at": "2026-10-31T17:07:26.988Z"
+  },
+  "33415902": {
+   "sig": "b2e3b34ff051",
+   "file": "33415902-b2e3b34ff051.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/33415902-b2e3b34ff051.mp4",
+   "name": "סוזוקי בלנו 2020",
+   "at": "2026-11-16T13:07:33.719Z"
   },
   "36017302": {
    "sig": "e9c72137d0e3",
@@ -155,11 +162,11 @@
    "at": "2026-11-11T21:34:36.510Z"
   },
   "51844602": {
-   "sig": "60250afde35b",
-   "file": "51844602-60250afde35b.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/51844602-60250afde35b.mp4",
+   "sig": "079993072b12",
+   "file": "51844602-079993072b12.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/51844602-079993072b12.mp4",
    "name": "שברולט סילברדו 2022",
-   "at": "2026-10-31T17:11:35.544Z"
+   "at": "2026-11-16T13:10:31.520Z"
   },
   "51911402": {
    "sig": "1754f109c445",
@@ -197,6 +204,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-15T19:56:28.871Z",
- "count": 28
+ "updated": "2026-11-16T13:13:35.557Z",
+ "count": 29
 }
