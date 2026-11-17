@@ -133,19 +133,19 @@
    "name": "סוזוקי בלנו 2020",
    "at": "2026-11-16T13:07:33.719Z"
   },
-  "36017302": {
-   "sig": "e9c72137d0e3",
-   "file": "36017302-e9c72137d0e3.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/36017302-e9c72137d0e3.mp4",
-   "name": "יונדאי i20 2021",
-   "at": "2026-11-13T12:39:41.223Z"
-  },
   "36558402": {
    "sig": "03f08942e18f",
    "file": "36558402-03f08942e18f.mp4",
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/36558402-03f08942e18f.mp4",
    "name": "מיצובישי ספייס סטאר 2021",
    "at": "2026-10-31T17:07:29.434Z"
+  },
+  "38651104": {
+   "sig": "b5a1174dcea2",
+   "file": "38651104-b5a1174dcea2.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/38651104-b5a1174dcea2.mp4",
+   "name": "טויוטה יאריס קרוס היברידי 2025",
+   "at": "2026-11-17T13:49:32.535Z"
   },
   "46623503": {
    "sig": "7454e3651fd0",
@@ -182,6 +182,13 @@
    "name": "מיצובישי אקליפס קרוס 2023",
    "at": "2026-11-05T12:46:52.937Z"
   },
+  "60967701": {
+   "sig": "72ac13e27ab4",
+   "file": "60967701-72ac13e27ab4.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/60967701-72ac13e27ab4.mp4",
+   "name": "מזדה CX-5 2020",
+   "at": "2026-11-17T13:51:29.422Z"
+  },
   "77419201": {
    "sig": "abbbde04fe54",
    "file": "77419201-abbbde04fe54.mp4",
@@ -204,6 +211,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-16T23:29:17.785Z",
- "count": 29
+ "updated": "2026-11-17T13:51:55.246Z",
+ "count": 30
 }
