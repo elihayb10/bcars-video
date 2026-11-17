@@ -462,35 +462,6 @@
    "name": "סקודה קודיאק 2019",
    "at": "2026-10-30T14:38:57.376Z"
   },
-  "14566103": {
-   "sig": "a2d39438342e",
-   "files": [
-    "14566103-a2d39438342e-01.jpg",
-    "14566103-a2d39438342e-02.jpg",
-    "14566103-a2d39438342e-03.jpg",
-    "14566103-a2d39438342e-04.jpg",
-    "14566103-a2d39438342e-05.jpg",
-    "14566103-a2d39438342e-06.jpg",
-    "14566103-a2d39438342e-07.jpg",
-    "14566103-a2d39438342e-08.jpg",
-    "14566103-a2d39438342e-09.jpg",
-    "14566103-a2d39438342e-10.jpg"
-   ],
-   "urls": [
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-01.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-02.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-03.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-04.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-05.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-06.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-07.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-08.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-09.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/14566103-a2d39438342e-10.jpg"
-   ],
-   "name": "טויוטה אייגו X 2022",
-   "at": "2026-11-09T23:34:22.779Z"
-  },
   "18182703": {
    "sig": "e5a5f3784f70",
    "files": [
@@ -1129,6 +1100,35 @@
    "name": "יונדאי טוסון 2021",
    "at": "2026-10-30T14:38:57.634Z"
   },
+  "56547702": {
+   "sig": "ded455086e3d",
+   "files": [
+    "56547702-ded455086e3d-01.jpg",
+    "56547702-ded455086e3d-02.jpg",
+    "56547702-ded455086e3d-03.jpg",
+    "56547702-ded455086e3d-04.jpg",
+    "56547702-ded455086e3d-05.jpg",
+    "56547702-ded455086e3d-06.jpg",
+    "56547702-ded455086e3d-07.jpg",
+    "56547702-ded455086e3d-08.jpg",
+    "56547702-ded455086e3d-09.jpg",
+    "56547702-ded455086e3d-10.jpg"
+   ],
+   "urls": [
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/56547702-ded455086e3d-01.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/56547702-ded455086e3d-02.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/56547702-ded455086e3d-03.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/56547702-ded455086e3d-04.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/56547702-ded455086e3d-05.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/56547702-ded455086e3d-06.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/56547702-ded455086e3d-07.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/56547702-ded455086e3d-08.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/56547702-ded455086e3d-09.jpg",
+    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/56547702-ded455086e3d-10.jpg"
+   ],
+   "name": "יונדאי i20 2021",
+   "at": "2026-11-17T22:39:10.385Z"
+  },
   "60967701": {
    "sig": "035a2171a558",
    "files": [
@@ -1362,6 +1362,6 @@
    "at": "2026-10-31T16:57:49.639Z"
   }
  },
- "updated": "2026-11-17T13:51:53.705Z",
+ "updated": "2026-11-17T22:39:13.065Z",
  "count": 47
 }
