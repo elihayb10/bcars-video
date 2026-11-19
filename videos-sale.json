@@ -42,13 +42,6 @@
    "name": "יונדאי טוסון 2016",
    "at": "2026-11-02T17:30:12.574Z"
   },
-  "7979332": {
-   "sig": "f917b87453d7",
-   "file": "7979332-f917b87453d7.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/7979332-f917b87453d7.mp4",
-   "name": "לנד רובר דיסקברי ספורט 2015",
-   "at": "2026-11-13T12:42:23.283Z"
-  },
   "8057676": {
    "sig": "4ee3793467d2",
    "file": "8057676-4ee3793467d2.mp4",
@@ -90,13 +83,6 @@
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/22639903-dfeb0b859b1a.mp4",
    "name": "פיג'ו 2008 2023",
    "at": "2026-10-31T16:34:47.070Z"
-  },
-  "24697103": {
-   "sig": "eb89298f898e",
-   "file": "24697103-eb89298f898e.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/24697103-eb89298f898e.mp4",
-   "name": "קרייזלר דודג׳ ראם 2023",
-   "at": "2026-11-15T12:16:45.207Z"
   },
   "24861903": {
    "sig": "f707b04ad55d",
@@ -175,6 +161,13 @@
    "name": "יונדאי i20 2021",
    "at": "2026-11-17T22:38:34.813Z"
   },
+  "58681703": {
+   "sig": "775c8ed10f7f",
+   "file": "58681703-775c8ed10f7f.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/58681703-775c8ed10f7f.mp4",
+   "name": "סקודה אוקטביה 2023",
+   "at": "2026-11-19T13:57:18.371Z"
+  },
   "60967701": {
    "sig": "72ac13e27ab4",
    "file": "60967701-72ac13e27ab4.mp4",
@@ -204,6 +197,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-18T13:22:15.934Z",
- "count": 29
+ "updated": "2026-11-19T13:57:53.170Z",
+ "count": 28
 }
