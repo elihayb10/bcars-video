@@ -578,35 +578,6 @@
    "name": "קיה פיקנטו 2020",
    "at": "2026-10-30T14:38:57.454Z"
   },
-  "26379601": {
-   "sig": "235679dcd3d8",
-   "files": [
-    "26379601-235679dcd3d8-01.jpg",
-    "26379601-235679dcd3d8-02.jpg",
-    "26379601-235679dcd3d8-03.jpg",
-    "26379601-235679dcd3d8-04.jpg",
-    "26379601-235679dcd3d8-05.jpg",
-    "26379601-235679dcd3d8-06.jpg",
-    "26379601-235679dcd3d8-07.jpg",
-    "26379601-235679dcd3d8-08.jpg",
-    "26379601-235679dcd3d8-09.jpg",
-    "26379601-235679dcd3d8-10.jpg"
-   ],
-   "urls": [
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/26379601-235679dcd3d8-01.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/26379601-235679dcd3d8-02.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/26379601-235679dcd3d8-03.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/26379601-235679dcd3d8-04.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/26379601-235679dcd3d8-05.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/26379601-235679dcd3d8-06.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/26379601-235679dcd3d8-07.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/26379601-235679dcd3d8-08.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/26379601-235679dcd3d8-09.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/26379601-235679dcd3d8-10.jpg"
-   ],
-   "name": "פיאט טיפו 2017",
-   "at": "2026-11-16T13:13:23.846Z"
-  },
   "30690001": {
    "sig": "9bf1e1c3fc41",
    "files": [
@@ -1217,6 +1188,6 @@
    "at": "2026-10-31T16:57:49.639Z"
   }
  },
- "updated": "2026-11-19T22:23:39.919Z",
- "count": 42
+ "updated": "2026-11-20T13:29:27.051Z",
+ "count": 41
 }
