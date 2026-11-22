@@ -56,13 +56,6 @@
    "name": "שברולט מאליבו 2015",
    "at": "2026-10-31T17:07:45.488Z"
   },
-  "11815203": {
-   "sig": "054535a4dcb4",
-   "file": "11815203-054535a4dcb4.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/11815203-054535a4dcb4.mp4",
-   "name": "יונדאי טוסון 2022",
-   "at": "2026-10-31T16:34:44.687Z"
-  },
   "18182703": {
    "sig": "b62abb5d9723",
    "file": "18182703-b62abb5d9723.mp4",
@@ -111,13 +104,6 @@
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/36558402-03f08942e18f.mp4",
    "name": "מיצובישי ספייס סטאר 2021",
    "at": "2026-10-31T17:07:29.434Z"
-  },
-  "46623503": {
-   "sig": "7454e3651fd0",
-   "file": "46623503-7454e3651fd0.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/46623503-7454e3651fd0.mp4",
-   "name": "סקודה סופרב 2023",
-   "at": "2026-11-13T12:37:00.434Z"
   },
   "48096201": {
    "sig": "14f140beb93a",
@@ -190,6 +176,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-21T20:38:59.992Z",
- "count": 27
+ "updated": "2026-11-22T12:48:26.449Z",
+ "count": 25
 }

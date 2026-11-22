@@ -288,35 +288,6 @@
    "name": "יונדאי טוסון 2017",
    "at": "2026-11-17T13:51:50.529Z"
   },
-  "11815203": {
-   "sig": "1aaae3f06be0",
-   "files": [
-    "11815203-1aaae3f06be0-01.jpg",
-    "11815203-1aaae3f06be0-02.jpg",
-    "11815203-1aaae3f06be0-03.jpg",
-    "11815203-1aaae3f06be0-04.jpg",
-    "11815203-1aaae3f06be0-05.jpg",
-    "11815203-1aaae3f06be0-06.jpg",
-    "11815203-1aaae3f06be0-07.jpg",
-    "11815203-1aaae3f06be0-08.jpg",
-    "11815203-1aaae3f06be0-09.jpg",
-    "11815203-1aaae3f06be0-10.jpg"
-   ],
-   "urls": [
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/11815203-1aaae3f06be0-01.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/11815203-1aaae3f06be0-02.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/11815203-1aaae3f06be0-03.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/11815203-1aaae3f06be0-04.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/11815203-1aaae3f06be0-05.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/11815203-1aaae3f06be0-06.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/11815203-1aaae3f06be0-07.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/11815203-1aaae3f06be0-08.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/11815203-1aaae3f06be0-09.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/11815203-1aaae3f06be0-10.jpg"
-   ],
-   "name": "יונדאי טוסון 2022",
-   "at": "2026-10-30T14:38:57.362Z"
-  },
   "12338002": {
    "sig": "490241ff77a6",
    "files": [
@@ -664,35 +635,6 @@
    ],
    "name": "מיצובישי ספייס סטאר 2021",
    "at": "2026-10-30T14:38:57.521Z"
-  },
-  "46623503": {
-   "sig": "b56c5f092027",
-   "files": [
-    "46623503-b56c5f092027-01.jpg",
-    "46623503-b56c5f092027-02.jpg",
-    "46623503-b56c5f092027-03.jpg",
-    "46623503-b56c5f092027-04.jpg",
-    "46623503-b56c5f092027-05.jpg",
-    "46623503-b56c5f092027-06.jpg",
-    "46623503-b56c5f092027-07.jpg",
-    "46623503-b56c5f092027-08.jpg",
-    "46623503-b56c5f092027-09.jpg",
-    "46623503-b56c5f092027-10.jpg"
-   ],
-   "urls": [
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/46623503-b56c5f092027-01.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/46623503-b56c5f092027-02.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/46623503-b56c5f092027-03.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/46623503-b56c5f092027-04.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/46623503-b56c5f092027-05.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/46623503-b56c5f092027-06.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/46623503-b56c5f092027-07.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/46623503-b56c5f092027-08.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/46623503-b56c5f092027-09.jpg",
-    "https://raw.githubusercontent.com/elihayb10/bcars-video/cards/46623503-b56c5f092027-10.jpg"
-   ],
-   "name": "סקודה סופרב 2023",
-   "at": "2026-11-13T12:42:45.237Z"
   },
   "46653902": {
    "sig": "008eaae0c969",
@@ -1188,6 +1130,6 @@
    "at": "2026-10-31T16:57:49.639Z"
   }
  },
- "updated": "2026-11-21T20:38:59.474Z",
- "count": 41
+ "updated": "2026-11-22T12:48:24.889Z",
+ "count": 39
 }
