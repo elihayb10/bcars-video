@@ -91,6 +91,13 @@
    "name": "מזדה 2 2018",
    "at": "2026-10-31T17:07:26.988Z"
   },
+  "32247403": {
+   "sig": "fda9fe6deb6a",
+   "file": "32247403-fda9fe6deb6a.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/32247403-fda9fe6deb6a.mp4",
+   "name": "רנו מגאן 2023",
+   "at": "2026-11-25T14:53:07.860Z"
+  },
   "33415902": {
    "sig": "b2e3b34ff051",
    "file": "33415902-b2e3b34ff051.mp4",
@@ -183,6 +190,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-24T15:14:20.124Z",
- "count": 26
+ "updated": "2026-11-25T14:53:39.430Z",
+ "count": 27
 }
