@@ -28,13 +28,6 @@
    "name": "אאודי Q3 2013",
    "at": "2026-11-08T11:32:38.047Z"
   },
-  "6638873": {
-   "sig": "7c4869a7f6e0",
-   "file": "6638873-7c4869a7f6e0.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/6638873-7c4869a7f6e0.mp4",
-   "name": "סיאט איביזה 2011",
-   "at": "2026-11-08T11:34:12.644Z"
-  },
   "6751539": {
    "sig": "507b68546ad6",
    "file": "6751539-507b68546ad6.mp4",
@@ -43,11 +36,11 @@
    "at": "2026-11-02T17:30:12.574Z"
   },
   "8057676": {
-   "sig": "4ee3793467d2",
-   "file": "8057676-4ee3793467d2.mp4",
-   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/8057676-4ee3793467d2.mp4",
+   "sig": "14444a1c7289",
+   "file": "8057676-14444a1c7289.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/8057676-14444a1c7289.mp4",
    "name": "סקודה פאביה 2011",
-   "at": "2026-11-10T13:03:36.742Z"
+   "at": "2026-11-26T14:22:10.332Z"
   },
   "9151332": {
    "sig": "87c3fabb55fa",
@@ -55,6 +48,13 @@
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/9151332-87c3fabb55fa.mp4",
    "name": "שברולט מאליבו 2015",
    "at": "2026-10-31T17:07:45.488Z"
+  },
+  "11389704": {
+   "sig": "374fec844b6e",
+   "file": "11389704-374fec844b6e.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/11389704-374fec844b6e.mp4",
+   "name": "צ'רי טיגו 7 פרו 2024",
+   "at": "2026-11-26T14:18:13.152Z"
   },
   "18182703": {
    "sig": "b62abb5d9723",
@@ -111,6 +111,13 @@
    "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/36558402-03f08942e18f.mp4",
    "name": "מיצובישי ספייס סטאר 2021",
    "at": "2026-10-31T17:07:29.434Z"
+  },
+  "39629601": {
+   "sig": "cbc168e7ef4e",
+   "file": "39629601-cbc168e7ef4e.mp4",
+   "url": "https://github.com/elihayb10/bcars-video/releases/download/videos-sale/39629601-cbc168e7ef4e.mp4",
+   "name": "סקודה ראפיד 2018",
+   "at": "2026-11-26T14:20:03.692Z"
   },
   "48096201": {
    "sig": "14f140beb93a",
@@ -190,6 +197,6 @@
    "at": "2026-10-30T14:07:26.793Z"
   }
  },
- "updated": "2026-11-25T14:53:39.430Z",
- "count": 27
+ "updated": "2026-11-26T14:22:33.241Z",
+ "count": 28
 }
